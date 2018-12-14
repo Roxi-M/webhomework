@@ -4,7 +4,81 @@
     <bookmark url="file://$PROJECT_DIR$/src/Main.java" line="97" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30cf6822-071e-4818-ba57-c7e42b731140" name="Default Changelist" comment="" />
+    <list default="true" id="30cf6822-071e-4818-ba57-c7e42b731140" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Homework3.level2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework3.level2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework3.level2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework3.level2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework3.level2/Homework3.level2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework3.level2/src/Inp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework3.level2/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework3.level2/src/Out.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework3.level2/src/Rooms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework4.level1/.idea/libraries/mysql_connector_java_8_0_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework4.level1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework4.level1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework4.level1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework4.level1/Homework4.level1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework4.level1/src/JDBCUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework4.level1/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework4.level2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JDBCUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/CureSkill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/DamageSkill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/Hero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/MagicSkill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/Skill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/Stage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/Start.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/buff/Blinding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/buff/Buff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/buff/Dizzy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/buff/Poisoning.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/base/buff/Silent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/heros/SakuraMatou.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/heros/TohsakaRin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/skills/Bachi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/skills/Blind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/skills/CrowFlying.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/skills/InjuryFree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/skills/Outburst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/skills/Poi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/skills/Silent_big.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework2/src/team/redrock/skills/yingying.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework3.level1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework3.level1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework3.level1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework3.level1/homework3.level1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework3.level1/src/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework3.level1/src/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework3.level1/src/.idea/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework3.level1/src/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework3.level1/src/Rooms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework3.level1/src/demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.0/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.0/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.0/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.0/level.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.0/src0/Animals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.0/src0/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.1/level.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.1/src1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../level.1/src1/method.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,47 +86,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1027815247">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.4" value="5" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="iml" value="1" />
-          <entry key="java" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="4160" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="4160" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JDBCUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
+            <state relative-caret-position="322">
               <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
             </state>
           </provider>
@@ -61,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="862">
-              <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
+            <state relative-caret-position="465">
+              <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -76,6 +115,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -84,23 +126,18 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="830" />
     <option name="width" value="1095" />
     <option name="height" value="1090" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,14 +154,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543331466329" />
-    <property name="last_opened_file_path" value="D:/Homework4.level1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -172,22 +209,24 @@
       <workItem from="1542949202447" duration="2127000" />
       <workItem from="1543242314028" duration="5340000" />
       <workItem from="1543330482550" duration="982000" />
+      <workItem from="1544200348111" duration="436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15056000" />
+    <option name="totallyTimeSpent" value="15492000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.27010724" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.27292112" />
       <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.26340482" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
@@ -198,8 +237,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32956153" />
+      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -214,33 +254,22 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Homework4.level2.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://D:/Homework4.level1/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Homework4.level1/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/JDBCUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="322">
           <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
+        <state relative-caret-position="465">
+          <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
         </state>
       </provider>
     </entry>
