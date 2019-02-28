@@ -1,0 +1,1278 @@
+
+<html>
+	<head>
+		<link rel="icon" href="image/icon.ico" type="image/x-icon" />  
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+			*{
+				margin: 0rem;
+				padding: 0rem;
+				text-decoration: none;
+			}
+			html
+			{
+				box-sizing:border-box;
+				font-size: 12px;
+	        }
+				
+			
+			#NavBox{
+			   position:fixed;
+			   display: flex;
+			   flex-direction: row;
+			   width: 160rem;
+			   height: 6rem;
+			   background: rgba(255, 255, 255, 0.9);
+			   	z-index: 999;
+				left: 0;
+				top: 0;
+				border-top: 0.4rem solid rgb(239,107,18);
+				-moz-box-shadow:0px 1px 7px #333333; -webkit-box-shadow:0px 1px 7px #333333; box-shadow:0px 1px 7px #333333;
+			}
+			.Nav_LogoBox{
+			height: 6rem;
+			width:15rem;
+			background: url(image/topLogo.jpg);
+			background-size:100% 100%;
+			background-repeat: no-repeat;
+			margin-left: 18rem;
+			}
+			#Nav_InputBox{
+				width: 28rem;
+				height:4rem;
+				background: yellow;
+				margin-left:20rem ;
+				margin-top: 1rem;
+				border: 0.2rem solid rgb(204,204,204);
+				border-radius: 1rem;
+				background: rgb(242,242,245);
+			}
+				#Nav_InputBox_Input{
+					font-size: 2rem;
+				display: inline-block;
+				background:rgb(242,242,245);
+				width: 22.5rem;
+				height: 3rem;
+				margin-top: 0.5rem;
+				margin-left: 1rem;
+				outline: none;
+				border: 0rem;
+				
+			}
+			#Search{
+				  position: absolute;
+				  left: 76.5rem;
+				  top: 0.5rem;
+				  width: 0rem;
+				  height: 0rem;
+				  
+			}
+			.Nav_Guide{
+				height: 4rem;
+				width: 44rem;
+				
+				margin-left: 10rem ;
+				display: flex;
+				flex-direction: row;
+				
+			}
+			.Nav_Guide div{
+				height: 4rem;
+				width: 11rem;
+				
+				margin-top:1.2rem;
+				line-height: 4rem;
+				vertical-align: center;
+				text-align: center;
+				font-size: 2rem;
+			}
+			.Nav_Guide div img{
+				display: inline-block;
+				margin-top: 0.2rem;
+				width: 2rem;
+				height: 2rem;
+				filter:grayscale(100%);
+				   opacity: 0.8;
+			}
+				.Nav_Guide_Shouye:hover img,.Nav_Guide_Shipin:hover img,.Nav_Guide_faxian:hover img,.Nav_Guide_youxi:hover img{
+					filter: none;
+					opacity: 1;
+				}
+				.Nav_Guide_Shouye:hover ,.Nav_Guide_Shipin:hover ,.Nav_Guide_faxian:hover ,.Nav_Guide_youxi:hover {
+					color: rgb(239,107,18);
+				}
+			
+			.Nav_RAL{
+				height: 6rem;
+				width: 15rem;
+				
+				margin-left: 2rem;
+				line-height: 6rem;
+				text-align: center;
+				font-size: 2rem;
+			}
+			.Nav_RAL a{
+				color:black;
+			}
+			.Nav_RAL a:hover{
+				color:  rgb(239,107,18);
+			}
+			.Main_Left{
+				position: fixed;
+				display: flex;
+				flex-direction: column;
+				top: 6.4rem;
+				left: 0rem;
+				height: 65rem;
+				width: 20rem;
+				
+				
+			}
+			#Main{
+				position: absolute;
+				left: 25rem;
+				top: 7rem;
+				border-radius: 1rem;
+				
+				width: 88rem;
+				height: 140rem;
+				display: inline-block;
+			}
+			.huifuBox{
+				margin-top: 1rem;
+				height:6rem;
+				width: 88rem;
+				background:blue;
+			   font-size: 1.5rem;
+			   line-height: 6rem;
+			   vertical-align: middle;
+			   border-radius: 1rem;
+			   box-shadow:2px 2px 5px #333333;
+				
+			}
+			#Main_weiboContainer{
+				width: 80rem;
+				height: 50rem;
+				box-shadow:-5px -2px 5px #333333;
+				margin:0 auto;
+				margin-top: 2rem;
+				display: flex;
+				flex-direction: column;
+			}
+			#weiboTextContainer{
+				width: 80rem;
+				height: 30rem;
+				border-radius: 1rem;
+				box-shadow:8px 5px 5px #333333;
+				overflow:auto;
+			    font-size: 2rem;
+			}
+			#weiboImgContainer{
+				width: 80rem;
+				height: 18rem;
+				margin-top: 1rem;
+				background: white;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+				overflow: auto;
+			}
+			#weiboImgContainer_1,#weiboImgContainer_2,#weiboImgContainer_3{
+				width: 18rem;
+				height: 18rem;
+				overflow: hidden;
+			}
+			#weiboImgContainer_1 img,#weiboImgContainer_2 img,#weiboImgContainer_3 img{
+				width: 100%;
+				height: 100%;
+			}
+			#Main_weiboBottomBar{
+				width: 88rem;
+				height: 5rem;
+			
+				margin-top: 1rem;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+			}
+		   #userCommintContainer{
+			   width: 88rem;
+			   height: 12rem;
+			   background: orange;
+			   display: flex;
+			   flex-direction: column;
+			   align-content: center;
+			   border-radius: 2rem;
+		   }
+		   #ConmmitContainer_Top{
+			   width: 88rem;
+			   height: 4rem;
+			   background: white;
+			   display: flex;
+			   flex-direction: row;
+			   
+		   }
+		   #CommintContainer_Top_imgContainer{
+			   width: 4rem;
+			   height: 4rem;
+			   overflow: hidden;
+			   border-radius: 5rem;
+			   margin-left: 2rem;
+		   }
+		    #CommintContainer_Top_imgContainer img{
+				width: 100%;
+				height: 100%;
+			}
+			#CommitContainer_Top_Name{
+				width: 10rem;
+				height: 4;
+				line-height: 4rem;
+				vertical-align: middle;
+				font-weight: bold;
+				font-size: 2rem;
+				
+			}
+			#CommitContainer_Input{
+				width: 84rem;
+				height: 5rem;
+				margin: 0 auto;
+				margin-top: 2rem;
+				outline: none;
+				font-size: 1.5rem;
+				border: 0rem;
+			}
+			#Commit_Submit{
+				width: 10rem;
+				height: 3rem;
+				line-height: 3rem;
+				text-align: center;
+				vertical-align: middle;
+				font-size: 1.5rem;
+				outline: none;
+				border: 0rem;
+				background: rgb(247,103,29);
+				border-radius: 1rem;
+				margin-left: 75rem;
+				margin-top: 1rem;
+			}
+			#Commit_Submit:hover{
+				cursor: pointer;
+			}
+			#shoucangBox,#dianzanBox,#pinglunBox{
+				height: 4rem;
+				width: 29rem;
+			
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+			#shoucangBox,#pinglunBox{
+				border-right: 0.5rem solid gray;
+			}
+			#dianzanContent,#pinglunContent{
+				background: white;
+				height: 3rem;
+				width: 10rem;
+				line-height: 3rem;
+				text-align: center;
+				vertical-align: middle;
+				font-weight: bold;
+				font-size: 2rem;
+				margin-top: 0.5rem;
+				
+			}
+			#shoucangImgContainer,#pinglunImgCotainer,#dianzanImgContainer{
+				height: 4rem;
+				width: 4rem;
+				overflow: hidden;
+				
+			}
+			#pinglunImgCotainer{
+				
+			}
+			#shoucangImgContainer img,#pinglunImgCotainer img,#dianzanImgContainer img{
+				width: 100%;
+				height: 100%;
+			filter:grayscale(100%);
+				   opacity: 0.8;
+				   cursor: pointer;
+			}
+			#pinglunImgCotainer img:hover{
+				filter: none;
+					opacity: 1;
+			}
+			#Main_UserInformation{
+				width:88rem;
+				height: 8rem;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+			
+			
+			#Main_UserName{
+				height: 4rem;
+				width: 25rem;
+			
+				vertical-align: middle;
+				font-weight: bold;
+				font-size: 2.5rem;
+				margin-left: 3rem;
+			}
+			#Main_UserName a{
+				color:black;
+			}
+			#Main_UserTouxiang{
+				overflow: hidden;
+				width:7rem;
+				height: 7rem;
+				border-radius: 5rem;
+			}
+			#Main_UserTouxiang img{
+				width: 100%;
+				height: 100%;
+			}
+			.Main_Left div {
+				text-align: center;
+				font-size: 3rem;
+				
+				line-height:6rem ;
+				width: 20rem;
+				height: 6rem;
+				margin-top: 0.5rem;
+				background:white;
+				border-radius: 1rem;
+				
+			}
+			.Main_Left div a{
+				display: inline-block;
+				color: black;
+				width: 20rem;
+				height: 6rem;
+				font-weight: bold;
+				
+			}
+			.Main_Left div:hover {
+				color: white;
+				background: rgb(239,107,18);
+			}
+			.Main_Left div:hover a{
+				color: white;
+				
+			}
+			.Main_Right{
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				width: 38rem;
+				height: 100rem;
+				
+				left: 118rem;
+				top: 7rem;
+				
+			}
+			.Main_Right_RAL{
+				display: flex;
+				
+				width: 38rem;
+				height: 25rem;
+				background: rgb(242,242,245);
+				flex-direction: column;
+				align-items: center;
+				box-shadow: 0.2rem 0.3rem 2rem #333333;
+			}
+			#userImgContainer{
+				margin-top: 2rem;
+				width: 10rem;
+				height: 10rem;
+				overflow: hidden;
+				border-radius: 10rem;
+			}
+			#userImgContainer img{
+				width: 100%;
+				height: 100%;
+			}
+			#userName{
+				width: 36rem;
+				height: 5rem;
+				line-height: 5rem;
+				text-align: center;
+				vertical-align: middle;
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+			#userInformation{
+				width: 36rem;
+				height: 5rem;
+				line-height: 5rem;
+				text-align: center;
+				vertical-align: middle;
+				font-size: 2.5rem;
+				font-weight: bold;
+				justify-content: center;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+			#userGuanzhu,#userFensi,#userShoucang{
+				width: 11rem;
+				height: 5rem;
+				line-height: 5rem;
+				text-align: center;
+				vertical-align: middle;
+				
+			}
+			#userGuanzhu,#userFensi{
+				border-right: 0.2rem solid white;
+			}
+			#userGuanzhu a,#userFensi a,#userShoucang a{
+				color: black;
+			}
+			.Main_Right_ResouBox{
+				display: flex;
+				flex-direction: column;
+				width: 38rem;
+				height: 60rem;
+				background: rgb(242,242,242);
+				margin-top: 10rem;
+				border-top: 0.3rem solid rgb(255,129,64);
+			}
+				.Main_Right_ResouBox_TopBOx{
+				height: 5rem;
+				line-height: 5rem;
+				font-size: 2rem;
+				width:20rem;
+				background: rgb(242,242,242);
+				font-weight: bolder;
+				text-align: center;
+			}
+			.ResoouBox_Container{
+				background: rgb(242,242,242);
+				width: 34rem;
+				height:10.5rem;
+				margin-left:2rem;
+				display: flex;
+				align-items: center;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			.ResouBox_TextContainer{
+				background: rgb(242,242,242);
+				height: 8rem;
+				width: 15rem;
+				display: flex;
+				flex-direction: column;
+			}
+			.Resou_Content{
+				height: 6rem;
+				width: 15rem;
+				background: rgb(242,242,242);
+				line-height: 6rem;
+				font-size: 1.5rem;
+				font-weight: bold;
+				vertical-align: center;
+				color: black;
+			}
+			.Resou_Time{
+				height: 2rem;
+				width: 15rem;
+				vertical-align: center;
+				font-size: 1rem;
+				color: rgb(128,128,128);
+			}
+			.ResouBox_ImgContainer{
+				background: white;
+				height:8rem;
+				width:15rem;
+			}
+			.ResouBox_ImgContainer img{
+				width: 100%;
+				height: 100%;
+			}
+			
+	#SearchBar{
+		position: fixed;
+		z-index: 1000;
+		background: white;
+		width: 28rem;
+		height: 36rem;
+		left:53rem;
+		top:5.8rem;
+		display: none;
+		flex-direction: column;
+		border-radius: 1rem;
+		-moz-box-shadow:1px 2px 10px #333333; -webkit-box-shadow:1px 2px 10px #333333; box-shadow:1px 2px 10px #333333;
+	}
+	.SearchBar_Box{
+		width: 28rem;
+		height: 4rem;
+		display: flex;
+		flex-direction: row; 
+		  line-height: 4rem;
+		  text-align: center;
+		  font-size: 2rem;
+	}
+	.SearchBar img{
+		height: 2rem;
+		width: 2rem;
+	}
+	#box1:hover ,#box2:hover,#box3:hover,#box4:hover,#box5:hover,#box6:hover,#box7:hover,#box8:hover,#box9:hover,#box10:hover{
+		background: rgba(242,242,245,0.99);
+	}
+		#zanImg{
+			width: 20rem;
+			width: 20rem;
+			position: fixed;
+			top:25rem;
+			left:60rem;
+			z-index: 99999;
+			display: none;
+			opacity: 1;
+		}
+		#ShouImg{
+			width: 20rem;
+			height: 20rem;
+			width: 20rem;
+			width: 20rem;
+			position: fixed;
+			top:25rem;
+			left:60rem;
+			z-index: 99999;
+			display: none;
+			opacity: 0;
+		}
+		#back{
+			position:fixed;
+			width: 8rem;
+			height: 8rem;
+			left: 145rem;
+			top: 58rem;
+			background:orange;
+			outline: none;
+			border: 0rem;
+			
+		}
+		</style>
+
+		<title>详情</title>
+		
+	</head>
+	<body  >
+
+		<img src="image/shoucang.png" alt="" id="ShouImg">
+		<img src="image/dianzan.png" alt="" id="zanImg">
+		<div id="NavBox">
+			<div class="Nav_LogoBox"></div>
+
+			
+			<div class="Nav_Guide">
+			     <div class="Nav_Guide_Shouye"><img src="image/shouyeR.png" >首页</div>
+				 <div class="Nav_Guide_Shipin"><img src="image/shipinR.png" >视频</div>
+				 <div class="Nav_Guide_faxian"><img src="image/faxianR.png" >发现</div>
+				 <div class="Nav_Guide_youxi"><img src="image/youxiR.png" >游戏</div>
+			</div>
+			<div class="Nav_RAL">
+				
+			</div>
+		</div>
+		<div class="Main_Left">
+			<div><a href="">热门</a></div>
+			<div><a href="">搞笑</a></div>
+			<div><a href="">社会</a></div>
+			<div><a href="">时尚</a></div>
+			<div><a href="">电影</a></div>
+			<div><a href="">体育</a></div>
+			<div><a href="">动漫</a></div>
+			
+		</div>
+		<div id="Main">
+			<div id="Main_UserInformation"> 
+				 <div id="Main_UserTouxiang"><img  id="tTouxiang" src="image/display5.png" alt=""></div>
+				 <div id="Main_UserName"><a href="personPageOther.html">陈冠希Edison</a></div>
+				
+			</div>
+            <div  id="Main_weiboContainer">
+				<div id="weiboTextContainer"></div>
+
+			</div>
+			<div id="Main_weiboBottomBar">
+				<div id="shoucangBox">
+					<div id="shoucangImgContainer">
+						<img src="image/shoucang.png" id="shoucangImg" target="1" onclick="shoucang()">
+					</div>
+				</div>
+				<div id="pinglunBox">
+					<div id="pinglunImgCotainer">
+						<img src="image/pinglunR.png" id="shoucangImg" target="1" >
+					</div>
+				  
+				</div>
+				<div id="dianzanBox">
+					<div id="dianzanImgContainer">
+						<img src="image/dianzan.png" alt="" id="dianzanImg" target="1" onclick="dianzan()">
+					</div>
+					<a href=""><div id="dianzanContent">666</div></a>
+				</div>
+			</div>
+			
+			<div id="userCommintContainer">
+				
+
+				<input type="text" id="CommitContainer_Input">
+				<input type="button" id="Commit_Submit" value="发表" onclick="pinglunFunction()">
+
+			</div>
+			
+
+			
+		</div>
+		<div class="Main_Right">
+			<div class="Main_Right_RAL">
+				<div id="userImgContainer">
+					 <img src="image/display3.png" >
+				</div>
+				<div id="userName">孙笑川</div>
+				<div id="userInformation">
+					<div id="userGuanzhu"><a href="" >关注:666</a></div>
+					<div id="userFensi"><a href="" >粉丝:666</a></div>
+
+				</div>
+			</div>
+			<div class="Main_Right_ResouBox">
+				 <div class="Main_Right_ResouBox_TopBOx">微博新鲜事</div>
+				 <div class="ResoouBox_Container">
+				 					 <div class="ResouBox_TextContainer">
+				 						 <a href="">
+				 							 <div class="Resou_Content">2019年央视元宵晚会</div>
+				 							 <div class="Resou_Time">2月18日 20:14</div>
+				 						 </a>
+				 					</div>
+				 					 <div class="ResouBox_ImgContainer"><a href=""><img src="image/display1.png" alt=""></a></div>
+				 </div>
+				<div class="ResoouBox_Container">
+									 <div class="ResouBox_TextContainer">
+										 <a href="">
+											 <div class="Resou_Content">2019年央视元宵晚会</div>
+											 <div class="Resou_Time">2月18日 20:14</div>
+										 </a>
+									</div>
+									 <div class="ResouBox_ImgContainer"><a href=""><img src="image/display1.png" alt=""></a></div>
+				</div>
+				<div class="ResoouBox_Container">
+									 <div class="ResouBox_TextContainer">
+										 <a href="">
+											 <div class="Resou_Content">2019年央视元宵晚会</div>
+											 <div class="Resou_Time">2月18日 20:14</div>
+										 </a>
+									</div>
+									 <div class="ResouBox_ImgContainer"><a href=""><img src="image/display1.png" alt=""></a></div>
+				</div>
+				<div class="ResoouBox_Container">
+									 <div class="ResouBox_TextContainer">
+										 <a href="">
+											 <div class="Resou_Content">2019年央视元宵晚会</div>
+											 <div class="Resou_Time">2月18日 20:14</div>
+										 </a>
+									</div>
+									 <div class="ResouBox_ImgContainer"><a href=""><img src="image/display1.png" alt=""></a></div>
+				</div>
+				 <div class="ResoouBox_Container">
+				 					 <div class="ResouBox_TextContainer">
+				 						 <a href="">
+				 							 <div class="Resou_Content">2019年央视元宵晚会</div>
+				 							 <div class="Resou_Time">2月18日 20:14</div>
+				 						 </a>
+				 					</div>
+				 					 <div class="ResouBox_ImgContainer"><a href=""><img src="image/display1.png" alt=""></a></div>
+				 </div>
+			</div>
+		    
+		</div>
+		<div id="SearchBar">
+			 <div class="SearchBar_Box"  onclick="insert(1)"><img src="image/1.png" alt=""><div id="box1">网红滤镜下的baby </div></div>
+			<div class="SearchBar_Box"  onclick="insert(2)"><img src="image/2.png" alt=""><div id="box2">刘谦魔术穿帮</div></div>
+			<div class="SearchBar_Box"  onclick="insert(3)"><img src="image/3.png" alt=""><div id="box3">考研成绩</div></div>
+			<div class="SearchBar_Box"  onclick="insert(4)"><img src="image/4.png" alt=""><div id="box4">加拿大电鳗</div></div>
+		    <div class="SearchBar_Box"  onclick="insert(5)"><img src="image/5.png" alt=""><div id="box5">元宵节</div></div>
+			<div class="SearchBar_Box"  onclick="insert(6)"><img src="image/6.png" alt=""><div id="box6">孙笑川与吴亦凡battle</div></div>
+			<div class="SearchBar_Box"  onclick="insert(7)"><img src="image/7.png" alt=""><div id="box7">孙笑川点评蔡徐坤球技</div></div>
+		    <div class="SearchBar_Box"  onclick="insert(8)"><img src="image/8.png" alt=""><div id="box8">孙笑川将与蔡徐坤合作</div></div>
+			<div class="SearchBar_Box"  onclick="insert(9)"><img src="image/9.png" alt=""><div id="box9">蔡徐坤球技</div></div>
+			
+		</div>
+		<input type="button" name="" id="back" value="返回顶部" onclick="backtop()" style="display: block;">
+	</body>
+	<script type="text/javascript">
+		var targetsite=0;
+		        var topsite = 0; 
+		       var time=null;
+		
+		
+		function backtop () {
+		               clearInterval(time);
+		                topsite=document.documentElement.scrollTop || document.body.scrollTop; 
+		               time = setInterval(function () {
+		               	var step=(targetsite-topsite)/5;
+					     step = step>0?Math.ceil(step):Math.floor(step);
+					     topsite=topsite+step;
+		               window.scrollTo(0,topsite);  
+		             if(topsite===0){
+		                	clearInterval(time);
+		
+		                }
+		
+		            },25);
+		
+		        }
+		function InputColorChange()
+		{
+			var box= document.getElementById("Nav_InputBox");
+			box.setAttribute("style","border:0.2rem solid rgb(250,125,60);background: rgb(255,255,255);");
+			var input=document.getElementById("Nav_InputBox_Input");
+			input.setAttribute("style","background: rgb(255,255,255);");
+			var box2=document.getElementById("SearchBar");
+			box2.setAttribute("style","display:flex;")
+
+		}
+
+
+		function InputColorLose(){
+			var box= document.getElementById("Nav_InputBox");
+			box.setAttribute("style","border: 0.2rem solid rgb(204,204,204);border-radius: 1rem;background: rgb(242,242,245);");
+			var input=document.getElementById("Nav_InputBox_Input");
+			input.setAttribute("style","background:rgb(242,242,245);");
+			var box2=document.getElementById("SearchBar");
+			box2.setAttribute("style","display:none;")
+		}
+		function ColorLoseName()
+		{
+			var box=document.getElementById("NameBox");
+			box.setAttribute("style","border: 0.3rem solid rgb(242,242,245);")
+		}
+		function ColorLosePassword()
+		{
+			var box=document.getElementById("PasswordBox");
+			box.setAttribute("style","border: 0.3rem solid rgb(242,242,245);")
+		}
+		function ColorChangeName()
+		{
+			var box=document.getElementById("NameBox");
+			box.setAttribute("style","border: 0.3rem solid rgb(250,125,60);")
+		}
+		function ColorChangePassword()
+		{
+			var box=document.getElementById("PasswordBox");
+			box.setAttribute("style","border: 0.3rem solid rgb(250,125,60);")
+		}
+		function textCount()
+		{   var color=document.getElementById("WeiboTextarea");
+			color.setAttribute("style","border: 0.3rem solid rgb(247,103,29);")
+			var input=document.getElementById("WeiboTextarea").value;
+			var string=input.length;
+			var count=document.getElementById("Output_TR");
+			if(count>120)
+			{
+				count.innerHTML="输入字数超过120了！"
+			}else{
+				count.innerHTML="你已经输入了"+string+"个字";
+			}
+		}
+		function inputColorChange(){
+			var box=document.getElementById("WeiboTextarea");
+			box.setAttribute("style","border: 0.3rem solid rgb(242,242,245);")
+
+		}
+		function weiboCheck(){
+			var input=document.getElementById("WeiboTextarea").value;
+			var string=input.length;
+			if (string==0)
+			{
+				alert("微博输入的内容不能为空")
+			}
+		}
+		function insert(index)
+		{
+			var box=document.getElementById("box"+index);
+			var string=box.innerHTML;
+
+			var input=document.getElementById("Nav_InputBox_Input");
+			input.value=string;
+		}
+		function pinglunFunction(){
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			{
+
+				xmlhttp=new XMLHttpRequest();
+			}
+			else
+			{
+
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			var num=document.getElementById("Commit_Submit").getAttribute("target");
+			var context=document.getElementById("CommitContainer_Input").value;
+			xmlhttp.open("post","/service/reply",true);
+			xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+			xmlhttp.send("num="+num+"&context="+context);
+			xmlhttp.onreadystatechange=function(){
+				if (xmlhttp.readyState==4&&xmlhttp.status==200){
+
+				}
+			}
+		}
+
+		function dianzan()
+		{
+			var img=document.getElementById("dianzanImg");
+
+			var string=img.getAttribute("target");
+			var box=document.getElementById("dianzanContent");
+            var a="0";
+			var b="1";
+			var count=parseInt(box.innerHTML);
+			var time;
+			if (string=="1")
+			{    
+				var xmlhttp;
+				if (window.XMLHttpRequest)
+				{
+					xmlhttp=new XMLHttpRequest();
+				}
+				else
+				{
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.open("post","/service/doGreat",true);
+				xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+				xmlhttp.send("msnum="+msnum+"&great="+a);
+
+				img.setAttribute("style","filter:none;opacity:1;")
+				img.setAttribute("target","0");
+				count=count+1;
+				var countR=String(count);
+				box.innerHTML=countR;
+				var zan=document.getElementById("zanImg");
+
+				var deg=0;
+
+				time=setInterval(function(){
+					if (deg<360){
+						zan.setAttribute("style","transform:rotate("+deg+"deg);display:block");
+						deg=deg+1;
+
+					}
+					if(deg>=360)
+					{
+						clearInterval(time);
+						zan.setAttribute("style","display:none;");
+					}
+				},5)
+
+
+			}
+			if (string=="0")
+			{   
+				var xmlhttp;
+				if (window.XMLHttpRequest)
+				{
+					xmlhttp=new XMLHttpRequest();
+				}
+				else
+				{
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.open("post","/service/doGreat",true);
+				xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+				xmlhttp.send("msnum="+msnum+"&great="+b);
+				xmlhttp.onreadystatechange=function()
+	                 {
+		                 if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		                      {
+			
+		                      }
+	                  }
+				img.setAttribute("style","filter:grayscale(100%);opacity:0.8;");
+				img.setAttribute("target","1");
+				count=count-1;
+				var countR=String(count);
+				box.innerHTML=countR;
+				var zan=document.getElementById("zanImg");
+
+				var deg=0;
+
+				time=setInterval(function(){
+					if (deg<360){
+
+						zan.setAttribute("style","transform:rotate("+deg+"deg);display:block");
+						deg=deg+1;
+
+					}
+					if(deg>=360)
+					{
+						clearInterval(time);
+						zan.setAttribute("style","display:none;");
+					}
+				},5)
+
+			}
+
+		}
+		function huifuFunction(obj){
+			var num=obj.getAttribute("target");
+			var context=prompt("输入回复内容");
+
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			{
+
+				xmlhttp=new XMLHttpRequest();
+			}
+			else
+			{
+
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.open("POST","/service/to123",true);
+			xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+			xmlhttp.send("num="+num+"&context="+context);
+			xmlhttp.onreadystatechange=function(){
+				if(xmlhttp.readyState==4 && xmlhttp.status==200){
+
+				}
+			}
+
+
+		}
+
+		function shoucang()
+		{  
+			var a="0";
+			var b="1";
+			var img=document.getElementById("shoucangImg");
+			var ShouImg=document.getElementById("ShouImg");
+			var target=img.getAttribute("target");
+			if (target=="1")
+			{   
+				var xmlhttp;
+				if (window.XMLHttpRequest)
+				{
+					xmlhttp=new XMLHttpRequest();
+				}
+				else
+				{
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.open("post","/service/collection",true);
+				xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+				xmlhttp.send("msnum="+msnum+"&right="+a);
+				img.setAttribute("target","0");
+				img.setAttribute("style","width: 100%;height: 100%;filter:none;opacity: 1;")
+				var count=0;
+				var CountR=1;
+				var timer=setInterval(function(){
+					if (count<1){
+						ShouImg.setAttribute("style","opacity:"+count+";display:block;");
+						count=count+0.1;
+					}
+					if (count>=1)
+					{
+						clearInterval(timer);
+					}
+				},50)
+				var TimerR=setInterval(function(){
+							if (CountR>0)
+							{
+								ShouImg.setAttribute("style","opacity:"+CountR+";display:block;");
+								CountR=CountR-0.1;
+							}
+							if (CountR<=0)
+							{
+								clearInterval(TimerR);
+							}
+						}
+						,50)
+
+			}
+			if (target=="0")
+			{   
+				var xmlhttp;
+				if (window.XMLHttpRequest)
+				{
+					xmlhttp=new XMLHttpRequest();
+				}
+				else
+				{
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.open("post","/service/collection",true);
+				xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+				xmlhttp.send("msnum="+msnum+"&right="+b);
+				img.setAttribute("target","1");
+				img.setAttribute("style","width: 100%;height: 100%;filter:grayscale(100%);opacity: 0.8;");
+				var count=0;
+				var CountR=1;
+				var timer=setInterval(function(){
+					if (count<10){
+						ShouImg.setAttribute("style","opacity:"+count+";display:block;");
+						count=count+0.1;
+					}
+					if (count>=1)
+					{
+						clearInterval(timer);
+					}
+				},50)
+				var TimerR=setInterval(function(){
+							if (CountR>0)
+							{
+								ShouImg.setAttribute("style","opacity:"+CountR+";display:block;");
+								CountR=CountR-0.1;
+							}
+							if (CountR<=0)
+							{
+								clearInterval(TimerR);
+							}
+						}
+						,50)
+			}
+			ShouImg.setAttribute("style","display:none;");
+		}
+		function parseJson(arr){
+			if(arr.length!=0) {
+				var str=arr[0].num;
+				function pp(arr) {
+					for (var i = 0; i < arr.length; i++) {
+
+						if (arr[i].messageList && arr[i].messageList.length != 0) {
+
+
+							if (arr[i].father == 0) {
+								var a=document.getElementById("Commit_Submit");
+								a.setAttribute("target",arr[i].num);
+								var tTouxiang=document.getElementById("tTouxiang");
+								tTouxiang.setAttribute("sec",arr[i].photo_head);
+								var weiboTextContainer=document.getElementById("weiboTextContainer");
+
+								weiboTextContainer.innerHTML=arr[i].info;
+
+
+								
+									var weiboImgContainer = document.createElement("DIV");
+									weiboImgContainer.setAttribute("id", "weiboImgContainer");
+									Main.appendChild(weiboImgContainer);
+
+									var weiboImgContainer_1 = document.createElement("DIV");
+									weiboImgContainer_1.setAttribute("id", "weiboImgContainer_1");
+									weiboImgContainer.appendChild(weiboImgContainer_1);
+
+									var img2 = document.createElement("DIV");
+									img2.setAttribute("sec", arr[i].photo);
+									weiboImgContainer_1.appendChild(img2);
+							
+
+
+
+
+								var box=document.createElement("DIV");
+								box.setAttribute("id",arr[i].num);
+								box.setAttribute("name",arr[i].nick_name);
+
+								box.setAttribute("style","width:88rem;height:120rem;");
+								Main.appendChild(box);
+
+
+							} else {
+								var son = document.createElement("div");
+								son.setAttribute("id", arr[i].num);
+								son.setAttribute("name", arr[i].nick_name);
+								var boxFather = document.getElementById(arr[i].father);
+								son.setAttribute("style", "margin-top: 1rem;height:6rem;width: 88rem;font-size: 1.5rem;line-height: 6rem;vertical-align: middle;border-radius: 1rem;box-shadow:2px 2px 5px #333333;");
+
+								var father=document.getElementById(str);
+
+								son.innerHTML = arr[i].nick_name + "回复了" + boxFather.getAttribute("name") + ":" + arr[i].info;
+								father.appendChild(son);
+								var input=document.createElement("INPUT");
+								input.setAttribute("type","button");
+								input.setAttribute("target",arr[i].num);
+								input.setAttribute("value","点击回复");
+								input.setAttribute("onclick","huifuFunction(this)");
+								son.appendChild(input);
+							}
+							pp(arr[i].messageList);
+						} else {
+
+
+							if (arr[i].father == 0) {
+								var tTouxiang=document.getElementById("tTouxiang");
+								tTouxiang.setAttribute("sec",arr[i].photo_head);
+								var weiboTextContainer=document.getElementById("weiboTextContainer");
+								weiboTextContainer.innerHTML=arr[i].info;
+
+								
+									var weiboImgContainer = document.createElement("DIV");
+									weiboImgContainer.setAttribute("id", "weiboImgContainer");
+									Main.appendChild(weiboImgContainer);
+
+									var weiboImgContainer_1 = document.createElement("DIV");
+									weiboImgContainer_1.setAttribute("id", "weiboImgContainer_1");
+									weiboImgContainer.appendChild(weiboImgContainer_1);
+
+									var img2 = document.createElement("DIV");
+									img2.setAttribute("sec", arr[i].photo);
+									weiboImgContainer_1.appendChild(img2);
+
+
+
+
+								var box=document.createElement("DIV");
+								box.setAttribute("id",arr[i].num);
+								box.setAttribute("name",arr[i].nick_name);
+								box.setAttribute("style","width:88rem;height:120rem;");
+								Main.appendChild(box);
+
+							} else {
+								var son = document.createElement("div");
+								son.setAttribute("id", arr[i].num);
+								son.setAttribute("name", arr[i].nick_name);
+								son.setAttribute("style", "margin-top: 1rem;height:6rem;width: 88rem;font-size: 1.5rem;line-height: 6rem;vertical-align: middle;border-radius: 1rem;box-shadow:2px 2px 5px #333333;");
+								var boxFather = document.getElementById(arr[i].father);
+
+								var father=document.getElementById(str);
+								son.innerHTML = arr[i].nick_name + "回复了" + boxFather.getAttribute("name") + ":" + arr[i].info;
+								father.appendChild(son);
+								var input=document.createElement("INPUT");
+								input.setAttribute("type","button");
+								input.setAttribute("target",arr[i].num);
+								input.setAttribute("value","点击回复");
+								input.setAttribute("onclick","huifuFunction(this)");
+								son.appendChild(input);
+							}
+							pp(arr[i].messageList);
+						}
+					}
+				}
+				pp(arr);
+			}
+
+		}
+
+
+	
+		function chushihuaShoucang(){
+			var button=document.getElementById("guanzhu");
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			{
+				xmlhttp=new XMLHttpRequest();
+			}
+			else
+			{
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.open("post","/service/dohome",true);
+			xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+			xmlhttp.send();
+
+			xmlhttp.onreadystatechange=function(){
+				if (xmlhttp.readyState==4 && xmlhttp.status==200){
+					var target=xmlhttp.responseText;
+
+					if (target=="1")
+					{
+						var shoucangImg=document.getElementById("shoucangImg");
+						shoucangImg.setAttribute("target","1");
+						shoucangImg.setAttribute("style","width: 100%;height: 100%;filter:grayscale(100%);opacity: 0.8;cursor: pointer;");
+					}
+					if (target=="0")
+					{
+						var shoucangImg=document.getElementById("shoucangImg");
+						shoucangImg.setAttribute("target","0");
+						shoucangImg.setAttribute("style","width: 100%;height: 100%;filter:none;opacity: 1;");
+					}
+				}
+			}
+		}
+
+		var zancount;
+	
+
+			var button=document.getElementById("guanzhu");
+
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			{
+				xmlhttp=new XMLHttpRequest();
+			}
+			else
+			{
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.open("post","/service/great",true);
+			xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+			xmlhttp.send();
+
+			xmlhttp.onreadystatechange=function(){
+				if (xmlhttp.readyState==4 && xmlhttp.status==200){
+					var target=xmlhttp.responseText;
+
+					if (target=="1")
+					{
+						var  dianzanImg=document.getElementById("dianzanImg");
+						dianzanImg.setAttribute("targe","1");
+						dianzanImg.setAttribute("style","ilter:grayscale(100%);opacity:0.8;");
+
+
+					}
+					if (target=="0")
+					{
+						var  dianzanImg=document.getElementById("dianzanImg");
+						dianzanImg.setAttribute("targe","0");
+						dianzanImg.setAttribute("style","filter:none;opacity:1;");
+					}
+				}
+			}
+
+
+		
+        var msnum;
+		var xmlhtt;
+		if (window.XMLHttpRequest)
+		{
+			xmlhtt=new XMLHttpRequest();
+		}
+		else
+		{
+			xmlhtt=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhtt.onreadystatechange=function()
+		{
+			if (xmlhtt.readyState==4 && xmlhtt.status==200)
+			{
+				var string="["+xmlhtt.responseText+"]";
+				var json=JSON.parse(string);
+				parseJson(json);
+				msnum=json[0].num;
+				zancount=json[0].great;
+                var dianzanContent=document.getElementById("dianzanContent");
+                dianzanContent.innerHTML=zancount;
+
+			}
+		}
+
+		xmlhtt.open("post","/tiaozhuan",true);
+		xmlhtt.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xmlhtt.send();
+
+		window.onload=function(){
+
+			chushihuaShoucang();
+			chushihuaDianzan();
+			
+		}
+
+	</script>
+</html>

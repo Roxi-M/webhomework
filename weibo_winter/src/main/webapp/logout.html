@@ -1,0 +1,1555 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="image/icon.ico" type="image/x-icon" />  
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+			*{
+				margin: 0rem;
+				padding: 0rem;
+				text-decoration: none;
+			}
+			html
+			{
+				box-sizing:border-box;
+				font-size: 12px;
+	        }
+				
+			
+			#NavBox{
+			   position:fixed;
+			   display: flex;
+			   flex-direction: row;
+			   width: 160rem;
+			   height: 6rem;
+			   background: rgba(255, 255, 255, 0.9);
+			   	z-index: 999;
+				left: 0;
+				top: 0;
+				border-top: 0.4rem solid rgb(239,107,18);
+				-moz-box-shadow:0px 1px 7px #333333; -webkit-box-shadow:0px 1px 7px #333333; box-shadow:0px 1px 7px #333333;
+			}
+			.Nav_LogoBox{
+			height: 6rem;
+			width:15rem;
+			background: url(image/topLogo.jpg);
+			background-size:100% 100%;
+			background-repeat: no-repeat;
+			margin-left: 18rem;
+			}
+			#Nav_InputBox{
+				width: 28rem;
+				height:4rem;
+				background: yellow;
+				margin-left:20rem ;
+				margin-top: 1rem;
+				border: 0.2rem solid rgb(204,204,204);
+				border-radius: 1rem;
+				background: rgb(242,242,245);
+			}
+				#Nav_InputBox_Input{
+					font-size: 2rem;
+				display: inline-block;
+				background:rgb(242,242,245);
+				width: 22.5rem;
+				height: 3rem;
+				margin-top: 0.5rem;
+				margin-left: 1rem;
+				outline: none;
+				border: 0rem;
+				
+			}
+			#Search{
+				  position: absolute;
+				  left: 76.5rem;
+				  top: 0.5rem;
+				  width: 0rem;
+				  height: 0rem;
+				  
+			}
+			.Nav_Guide{
+				height: 4rem;
+				width: 44rem;
+				
+				margin-left: 10rem ;
+				display: flex;
+				flex-direction: row;
+				
+			}
+			.Nav_Guide div{
+				height: 4rem;
+				width: 11rem;
+				
+				margin-top:1.2rem;
+				line-height: 4rem;
+				vertical-align: center;
+				text-align: center;
+				font-size: 2rem;
+			}
+			.Nav_Guide div img{
+				display: inline-block;
+				margin-top: 0.2rem;
+				width: 2rem;
+				height: 2rem;
+				filter:grayscale(100%);
+				   opacity: 0.8;
+			}
+				.Nav_Guide_Shouye:hover img,.Nav_Guide_Shipin:hover img,.Nav_Guide_faxian:hover img,.Nav_Guide_youxi:hover img{
+					filter: none;
+					opacity: 1;
+				}
+				.Nav_Guide_Shouye:hover ,.Nav_Guide_Shipin:hover ,.Nav_Guide_faxian:hover ,.Nav_Guide_youxi:hover {
+					color: rgb(239,107,18);
+				}
+			
+			.Nav_RAL{
+				height: 6rem;
+				width: 15rem;
+				
+				margin-left: 2rem;
+				line-height: 6rem;
+				text-align: center;
+				font-size: 2rem;
+			}
+			.Nav_RAL a{
+				color:black;
+			}
+			.Nav_RAL a:hover{
+				color:  rgb(239,107,18);
+			}
+			.Main_Left{
+				position: fixed;
+				display: flex;
+				flex-direction: column;
+				top: 6.4rem;
+				left: 0rem;
+				height: 65rem;
+				width: 20rem;
+				
+				
+			}
+			.Main_Left:hover{
+				cursor: pointer;
+			}
+			.Main{
+				position: absolute;
+				left: 25rem;
+				top: 7rem;
+				
+				width: 88rem;
+				height: 160rem;
+				
+				display: inline-block;
+				
+			}
+			.Main_Left div {
+				text-align: center;
+				font-size: 3rem;
+				
+				line-height:6rem ;
+				width: 20rem;
+				height: 6rem;
+				margin-top: 0.5rem;
+				background:white;
+				border-radius: 1rem;
+				
+			}
+			.Main_Left div a{
+				display: inline-block;
+				color: black;
+				width: 20rem;
+				height: 6rem;
+				font-weight: bold;
+				
+			}
+			.Main_Left div:hover {
+				color: white;
+				background: rgb(239,107,18);
+			}
+			.Main_Left div:hover a{
+				color: white;
+				
+			}
+			.Main_Right{
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				width: 38rem;
+				height: 160rem;
+				
+				left: 118rem;
+				top: 7rem;
+				
+			}
+			.Main_Right_RAL{
+				display: flex;
+			
+				width: 38rem;
+				height: 30rem;
+				background: rgb(242,242,245);
+				flex-direction: column;
+				box-shadow: 0.2rem 0.3rem 2rem #333333;
+				
+			}
+			#Login_touxingContainer{
+				width: 10rem;
+				height: 10rem;
+				background: red;
+				overflow: hidden;
+				margin: 0 auto;
+				margin-top: 2rem;
+				border-radius: 5rem;
+			}
+			#Login_touxiang{
+				width: 100%;
+				height: 100%;
+			}
+			#Login_guanzhu,#Login_fensi,#Login_shoucang,#Login_mingzi{
+				width: 38rem;
+				height: 4rem;
+				
+				font-size: 1.8rem;
+				text-align: center;
+				vertical-align: middle;
+			}
+			#Login_mingzi{
+				margin-top: 2rem;
+			}
+			#LoginForm{
+				width:33rem;
+				height:18rem ;
+			
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+			}
+			#NameBox,#PasswordBox{
+				
+				display: flex;
+				justify-content: space-around;
+				width:28rem;
+				height: 4.5rem;
+				line-height: 4.5rem;
+				margin-left: 2rem;
+				vertical-align: center;
+				border: 0.3rem solid rgb(242,242,245);
+				border-radius: 0.2rem;
+				}
+				
+				#NameBox img ,#PasswordBox img{
+					display: inline-block;
+				height: 3rem;
+				width:3rem;
+				margin-top: 0.75rem;
+			}
+			 #UserName,#UserPassword{
+				       display:inline-block;
+						 height: 3rem;
+						 line-height: 3rem;
+						 font-size: 2rem;
+						 width:22rem;
+						 margin-top: 0.75rem;
+						 outline: none;
+						 border: 0;
+						 
+			}
+			#Submit{
+				background: blue;
+				height: 5rem;
+				width: 8rem;
+				line-height: 3rem;
+				margin:0 auto;
+				
+			}
+			#Submit input{
+				width: 8rem;
+				height: 5rem;
+				outline: none;
+				font-size: 2rem;
+				border: 0rem;
+				background: rgb(255,129,64);
+				color: white;
+			}
+			#Submit input:hover{
+				background: rgb(247,103,29);
+				color: black;
+				cursor: pointer;
+			}
+			.Main_Right_ResouBox{
+				display: flex;
+				flex-direction: column;
+				width: 38rem;
+				height: 60rem;
+				background: rgb(242,242,242);
+				margin-top: 10rem;
+				border-top: 0.3rem solid rgb(255,129,64);
+			}
+				.Main_Right_ResouBox_TopBOx{
+				height: 5rem;
+				line-height: 5rem;
+				font-size: 2rem;
+				width:20rem;
+				background: rgb(242,242,242);
+				font-weight: bolder;
+				text-align: center;
+			}
+			.ResoouBox_Container{
+				background: rgb(242,242,242);
+				width: 34rem;
+				height:10.5rem;
+				margin-left:2rem;
+				display: flex;
+				align-items: center;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			.ResouBox_TextContainer{
+				background: rgb(242,242,242);
+				height: 8rem;
+				width: 15rem;
+				display: flex;
+				flex-direction: column;
+			}
+			.Resou_Content{
+				height: 6rem;
+				width: 15rem;
+				background: rgb(242,242,242);
+				line-height: 6rem;
+				font-size: 1.5rem;
+				font-weight: bold;
+				vertical-align: center;
+				color: black;
+			}
+			.Resou_Time{
+				height: 2rem;
+				width: 15rem;
+				vertical-align: center;
+				font-size: 1rem;
+				color: rgb(128,128,128);
+			}
+			.ResouBox_ImgContainer{
+				background: white;
+				height:8rem;
+				width:15rem;
+			}
+			.ResouBox_ImgContainer img{
+				width: 100%;
+				height: 100%;
+			}
+			.Main_Container{
+				display:flex;
+				flex-direction: column;
+				width: 88rem;
+				height: 160rem;
+				
+				z-index: 998;
+			}
+			.Main_DisplayBox{
+				width:88rem ;
+				height: 40rem;
+				background: yellow;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				background:url(image/display4.png) no-repeat;
+				opacity: 1;
+				background-size: 100% 100%;
+			}
+			.DisplayBox_Bottom{
+				width: 88rem;
+				height: 4rem;
+				display: flex;
+				flex-direction: row;
+				background: rgba(0,0,0,0);
+			}
+			.DisplayBox_BL{
+				height: 4rem;
+				width: 30rem;
+				line-height: 4rem;
+				vertical-align: bottom;
+				font-size: 2.5rem;
+				color:white;
+				background: rgba(0,0,0,0);
+			}
+			.DisplayBox_BR{
+				height: 4rem;
+				width:20rem;
+				background: rgba(0,0,0,0);
+				margin-left:38rem;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+			}
+			#change1,#change2,#change3,#change4{
+				height: 2rem;
+				width: 2rem;
+				background: black;
+				border-radius: 6rem;
+			}
+			#Main_Use_WeiboContainer{
+				width: 88rem;
+				height: 110rem;
+				
+				margin-top: 3rem;
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.Main_WeiboContainer{
+				width: 88rem;
+				height: 17.3rem;
+				
+				border-bottom: 0.3rem solid rgb(229,229,229);
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+			}
+			.Weibo_ImgContainer{
+				
+				height: 12rem;
+				width: 17rem;
+			}
+			.Weibo_ImgContainer img{
+				width: 100%;
+				height: 100%;
+			}
+			.Weibo_RightContainer{
+				
+				height: 15rem;
+				width: 60rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				}
+				.Weibo_RTContent{
+					
+					height: 3rem;
+					width: 60rem;
+					margin: 0 auto;
+					line-height: 3rem;
+					
+					font-size: 1.5rem;
+				}
+				.Weibo_RBContent{
+					
+					height: 2rem;
+					width: 60rem;
+					margin: 0 auto;
+					margin-top: 2rem;
+					display: flex;
+					flex-direction: row;
+					}
+					.Weibo_RBImgContainer{
+						height: 2rem;
+						width:2rem;
+						
+						border-radius: 5rem;
+						overflow: hidden;
+					}
+					.Weibo_RBImgContainer img{
+						width: 100%;
+						height: 100%;
+					}
+					.Weibo_RBContext{
+						height: 2rem;
+						width: 15rem;
+						
+						line-height: 2rem;
+						margin-left: 1rem;
+					}
+		   .Weibo_RBRContainer{
+		   	height: 2rem;
+		   	width: 30rem;
+		   
+			margin-left:12rem;
+			display: flex;
+			flex-direction: row;
+			}
+			.ForwardContainer,.CommitContainer,.Thumbs-upContainer{
+				height: 2rem;
+				width: 9rem;
+				
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			
+			.ForwardContainer,.CommitContainer{
+				border-right: 0.1rem solid black;
+			}
+			.Weibo_RBRImgContainer{
+				height: 2rem;
+				width: 2rem;
+				
+			}
+			.Weibo_RBRImgContainer img{
+				width: 100%;
+				height: 100%;
+				filter:grayscale(100%);
+				opacity:0.8;
+			}
+			#dianzan1,#dianzan2,#dianzan3,#dianzan4{
+					filter:grayscale(100%);
+				opacity:0.8;
+			}
+			.Weibo_RBRTextContainer{
+				height: 2rem;
+				width: 5rem;
+				
+				font-size: 1rem;
+				line-height: 2rem;
+				text-align: center;
+			}
+			
+	.BottomBar{
+		width: 88rem;
+		height: 60rem;
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.Bottom_WeiboOutput{
+		width: 88rem;
+		height: 32rem;
+		border: 1rem solid rgb(242,242,245);
+		border-radius: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		-moz-box-shadow:2px 3px 8px #333333; -webkit-box-shadow:2px 3px 8px #333333; box-shadow:2px 3px 8px #333333;
+	}
+	.WeiboOutput_Top{
+		width:88rem;
+		height: 5rem;
+		
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.Output_TL{
+		width: 25rem;
+		height: 5rem;
+		
+		line-height: 5rem;
+		vertical-align: middle;
+		font-size: 2rem;
+		font-weight: bold;
+		margin-left: 2rem;
+	}
+	#Output_TR{
+		height: 5rem;
+		width: 30rem;
+	
+		line-height: 5rem;
+		font-size: 1.8rem;
+		font-weight: bold;
+		margin-left: 6rem;
+		
+	}
+	#WeiboTextarea{
+		width:84rem ;
+		height: 20rem;
+		font-size: 3rem;
+		outline: none;
+		border: 0.3rem solid rgb(242,242,242);
+		-moz-box-shadow:2px 3px 7px #333333; -webkit-box-shadow:2px 3px 7px #333333; box-shadow:2px 3px 7px #333333;
+	}
+	.Output_Bottom{
+		width: 84rem;
+		height: 4rem;
+		
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: row;
+	}
+	.biaoqinBox,.tupianBOx,.shipinBox,.huatiBox{
+		
+		height: 4rem;
+		width: 12rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.8rem;
+		font-weight: bold;
+	}
+	.biaoqinImgBox,.shipinImgBox,.tupianImgBox,.shipinImgBox,.huatiImgBox{
+		height: 4rem;
+		width: 4rem;
+		
+	}
+.biaoqinImgBox img,	.shipinImgBox img,.tupianImgBox img,.shipinImgBox img,.huatiImgBox img{
+		width: 100%;
+		height: 100%;
+	}
+	.weiboSubmit{
+		width: 14rem;
+		height: 4rem;
+	
+		margin-left: 21rem;
+		border-radius: 0.5rem;
+		
+	}
+	.weiboSubmit input{
+		height: 4rem;
+		width: 14rem;
+	    font-size: 3rem;
+		z-index: 998;
+		background: rgb(255,129,64);
+		color: white;
+		outline: none;
+		border: 0rem;
+		border-radius: 0.5rem;
+	}
+	.weiboSubmit input:hover
+	{
+		background: rgb(247,103,29);
+	}
+	.Bottom_WeiboB{
+		width: 88rem;
+		height: 15rem;
+		background: red;
+	}
+	#SearchBar{
+		position: fixed;
+		z-index: 1000;
+		background: white;
+		width: 28rem;
+		height: 36rem;
+		left:53rem;
+		top:5.8rem;
+		display: none;
+		flex-direction: column;
+		border-radius: 1rem;
+		-moz-box-shadow:1px 2px 10px #333333; -webkit-box-shadow:1px 2px 10px #333333; box-shadow:1px 2px 10px #333333;
+	}
+	.SearchBar_Box{
+		width: 28rem;
+		height: 4rem;
+		display: flex;
+		flex-direction: row; 
+		  line-height: 4rem;
+		  text-align: center;
+		  font-size: 2rem;
+	}
+	.SearchBar img{
+		height: 2rem;
+		width: 2rem;
+	}
+	#box1:hover ,#box2:hover,#box3:hover,#box4:hover,#box5:hover,#box6:hover,#box7:hover,#box8:hover,#box9:hover,#box10:hover{
+		background: rgba(242,242,245,0.99);
+	}
+		#zanImg{
+			width: 20rem;
+			width: 20rem;
+			position: fixed;
+			top:25rem;
+			left:60rem;
+			z-index: 99999;
+			display: none;
+			opacity: 1;
+		}
+		#back{
+			position:fixed;
+			width: 8rem;
+			height: 8rem;
+			left: 145rem;
+			top: 58rem;
+			background:orange;
+			outline: none;
+			border: 0rem;
+			
+		}
+		#tuichu{
+			background: orange;
+			outline: none;
+			border: 0rem;
+			width: 10rem;
+			height: 5rem;
+			font-size: 1.5rem;
+			border-radius: 1rem;
+			color: white;
+		}
+		#tuichu:hover{
+			background:rgba(247,103,29);
+			cursor: pointer;
+		}
+		#shuaxin{
+			position: fixed;
+			width: 8rem;
+			height: 8rem;
+			text-align: center;
+			line-height: 8rem;
+			background:orange;
+			top:60rem;
+			left: 7rem;
+			font-weight: bold;
+			font-size: 1.5rem;
+		    border-radius: 1rem
+		}
+		#shuaxin:hover{
+			cursor: pointer;
+		}
+		</style>
+		
+		
+		<title></title>
+		
+	</head>
+	<body  >
+		<img src="image/dianzan.png" alt="" id="zanImg">
+		<div id="NavBox">
+			<div class="Nav_LogoBox"></div>
+			<div id="Nav_InputBox">
+				<form action="" method="">
+				<input type="text" name="" id="Nav_InputBox_Input" value="" placeholder="大家都在搜" onfocus="InputColorChange()" oninput="InputColorChange()" onblur="InputColorLose()"/>
+				<a href="" style="" id="Search"><img src="image/ai219.png"></a>
+				</form>
+			</div>
+			<div class="Nav_Guide">
+			     <div class="Nav_Guide_Shouye"><img src="image/shouyeR.png" >首页</div>
+				 <div class="Nav_Guide_Shipin"><img src="image/shipinR.png" >视频</div>
+				 <div class="Nav_Guide_faxian"><img src="image/faxianR.png" >发现</div>
+				 <div class="Nav_Guide_youxi"><img src="image/youxiR.png" >游戏</div>
+			</div>
+			<div class="Nav_RAL">
+				<form action="logout" method="get/post">
+                   <input type="submit" name="right" value="点击退出" id="tuichu">
+                 </form>
+			</div>
+		</div>
+		<div class="Main_Left">
+			<div onclick="qiehuanzuixin()">最新</div>
+			<div onclick="qiehuangaoxiao()">搞笑</div>
+			<div onclick="qiehuanshehui()">社会</div>
+			<div onclick="qiehuanshishang()">时尚</div>
+			<div onclick="qiehuandianying()">电影</div>
+			<div onclick="qiehuantiyu()">体育</div>
+			<div onclick="qiehuandongman()">动漫</div>
+			
+		</div>
+		<div class="Main">
+			<div class="Main_Container">
+				<div class="Main_DisplayBox">
+					<div class="DisplayBox_Bottom">
+						<div class="DisplayBox_BL">孙笑川与吴亦凡battle</div>
+						   <div class="DisplayBox_BR">	
+						      <div id="change1" onclick="changImg(1)"></div>
+						      <div id="change2" onclick="changImg(2)"></div>
+						      <div id="change3" onclick="changImg(3)"></div>
+						      <div id="change4"onclick="changImg(4)"></div>
+						   </div>
+					</div>
+				</div>
+				<div id="Main_Use_WeiboContainer">
+					   <div class="Main_WeiboContainer">
+						 
+							   <div class="Weibo_ImgContainer"><img src="image/display2.png" ></div>
+							   <div class="Weibo_RightContainer">
+								    <div class="Weibo_RTContent"><a href="">不为别的，证明一下自己</a></div>
+									<div class="Weibo_RBContent">
+										<div class="Weibo_RBImgContainer"><a href=""><img src="image/display3.png" alt=""></a></div>
+										<div class="Weibo_RBContext"><a href="">胡歌&nbsp&nbsp&nbsp&nbsp2月18日&nbsp&nbsp&nbsp13:01</a></div>
+									    <div class="Weibo_RBRContainer">
+											<div class="ForwardContainer">
+												  <div class="Weibo_RBRImgContainer"><img src="image/zhuanfa.png" alt=""></div>
+												  <div class="Weibo_RBRTextContainer">6666</div>
+											</div>
+											<div class="CommitContainer">
+												 <div class="Weibo_RBRImgContainer"><img src="image/pinglun.png" alt=""></div>
+												 <div class="Weibo_RBRTextContainer">6666</div>
+											</div>
+											<div class="Thumbs-upContainer">
+												 <div class="Weibo_RBRImgContainer" onclick="dianzan(1)"><img src="image/dianzan.png" alt="" id="dianzan1" target="1"></div>
+												 <div class="Weibo_RBRTextContainer" id="dianzanS1">6667</div>
+											</div>
+										</div>
+									</div>
+							   </div>
+					    </div>
+					     <div class="Main_WeiboContainer">
+					    						 
+					    							   <div class="Weibo_ImgContainer"><img src="image/display2.png" ></div>
+					    							   <div class="Weibo_RightContainer">
+					    								    <div class="Weibo_RTContent"><a href="">不为别的，证明一下自己</a></div>
+					    									<div class="Weibo_RBContent">
+					    										<div class="Weibo_RBImgContainer"><a href=""><img src="image/display3.png" alt=""></a></div>
+					    										<div class="Weibo_RBContext"><a href="">胡歌&nbsp&nbsp&nbsp&nbsp2月18日&nbsp&nbsp&nbsp13:01</a></div>
+					    									    <div class="Weibo_RBRContainer">
+					    											<div class="ForwardContainer">
+					    												  <div class="Weibo_RBRImgContainer"><img src="image/zhuanfa.png" alt=""></div>
+					    												  <div class="Weibo_RBRTextContainer">6666</div>
+					    											</div>
+					    											<div class="CommitContainer">
+					    												 <div class="Weibo_RBRImgContainer"><img src="image/pinglun.png" alt=""></div>
+					    												 <div class="Weibo_RBRTextContainer">6666</div>
+					    											</div>
+					    											<div class="Thumbs-upContainer">
+					    												 <div class="Weibo_RBRImgContainer" onclick="dianzan(2)"><img src="image/dianzan.png" alt="" id="dianzan2" target="1"></div>
+					    												 <div class="Weibo_RBRTextContainer" id="dianzanS2">6666</div>
+					    											</div>
+					    										</div>
+					    									</div>
+					    							   </div>
+					     </div> 
+						 <div class="Main_WeiboContainer">
+						 
+							   <div class="Weibo_ImgContainer"><img src="image/display2.png" ></div>
+							   <div class="Weibo_RightContainer">
+								    <div class="Weibo_RTContent"><a href="">不为别的，证明一下自己</a></div>
+									<div class="Weibo_RBContent">
+										<div class="Weibo_RBImgContainer"><a href=""><img src="image/display3.png" alt=""></a></div>
+										<div class="Weibo_RBContext"><a href="">胡歌&nbsp&nbsp&nbsp&nbsp2月18日&nbsp&nbsp&nbsp13:01</a></div>
+									    <div class="Weibo_RBRContainer">
+											<div class="ForwardContainer">
+												  <div class="Weibo_RBRImgContainer"><img src="image/zhuanfa.png" alt=""></div>
+												  <div class="Weibo_RBRTextContainer">6666</div>
+											</div>
+											<div class="CommitContainer">
+												 <div class="Weibo_RBRImgContainer"><img src="image/pinglun.png" alt=""></div>
+												 <div class="Weibo_RBRTextContainer">6666</div>
+											</div>
+											<div class="Thumbs-upContainer">
+												 <div class="Weibo_RBRImgContainer" onclick="dianzan(3)"><img src="image/dianzan.png" alt="" id="dianzan3" target="1"></div>
+												 <div class="Weibo_RBRTextContainer" id="dianzanS3">6666</div>
+											</div>
+										</div>
+									</div>
+							   </div>
+					    </div> <div class="Main_WeiboContainer">
+						 
+							   <div class="Weibo_ImgContainer"><img src="image/display2.png" ></div>
+							   <div class="Weibo_RightContainer">
+								    <div class="Weibo_RTContent"><a href="">不为别的，证明一下自己</a></div>
+									<div class="Weibo_RBContent">
+										<div class="Weibo_RBImgContainer"><a href=""><img src="image/display3.png" alt=""></a></div>
+										<div class="Weibo_RBContext"><a href="">胡歌&nbsp&nbsp&nbsp&nbsp2月18日&nbsp&nbsp&nbsp13:01</a></div>
+									    <div class="Weibo_RBRContainer">
+											<div class="ForwardContainer">
+												  <div class="Weibo_RBRImgContainer"><img src="image/zhuanfa.png" alt=""></div>
+												  <div class="Weibo_RBRTextContainer">6666</div>
+											</div>
+											<div class="CommitContainer">
+												 <div class="Weibo_RBRImgContainer"><img src="image/pinglun.png" alt=""></div>
+												 <div class="Weibo_RBRTextContainer">6666</div>
+											</div>
+											<div class="Thumbs-upContainer">
+												 <div class="Weibo_RBRImgContainer" onclick="dianzan(4)"><img src="image/dianzan.png" alt="" id="dianzan4" target="1"></div>
+												 <div class="Weibo_RBRTextContainer" id="dianzanS4">6666</div>
+											</div>
+										</div>
+									</div>
+							   </div>
+					    </div>
+						
+			    </div>
+			</div>
+			
+		</div>
+		<div class="Main_Right">
+			<div class="Main_Right_RAL">
+				 <div id="Login_touxingContainer"><a href="personPage.html">
+					 <img src="/image/display3.png" alt="" id="Login_touxiang"></a>
+				 </div>
+				 <div id="Login_mingzi">你好！XXX</div>
+				 <div id="Login_guanzhu">关注 :</div>
+				 <div id="Login_fensi">粉丝 :</div>
+				 <div id="Login_shoucang">收藏 :</div>
+				 
+			</div>
+			<div class="Main_Right_ResouBox">
+				 <div class="Main_Right_ResouBox_TopBOx">微博新鲜事</div>
+				 <div class="ResoouBox_Container">
+				 					 <div class="ResouBox_TextContainer">
+				 						 <a href="">
+				 							 <div class="Resou_Content">2019年央视元宵晚会</div>
+				 							 <div class="Resou_Time">2月18日 20:14</div>
+				 						 </a>
+				 					</div>
+				 					 <div class="ResouBox_ImgContainer"><a href=""><img src="image/display1.png" alt=""></a></div>
+				 </div>
+				<div class="ResoouBox_Container">
+									 <div class="ResouBox_TextContainer">
+										 <a href="">
+											 <div class="Resou_Content">2019年央视元宵晚会</div>
+											 <div class="Resou_Time">2月18日 20:14</div>
+										 </a>
+									</div>
+									 <div class="ResouBox_ImgContainer"><a href=""><img src="image/display1.png" alt=""></a></div>
+				</div>
+				<div class="ResoouBox_Container">
+									 <div class="ResouBox_TextContainer">
+										 <a href="">
+											 <div class="Resou_Content">2019年央视元宵晚会</div>
+											 <div class="Resou_Time">2月18日 20:14</div>
+										 </a>
+									</div>
+									 <div class="ResouBox_ImgContainer"><a href=""><img src="image/display1.png" alt=""></a></div>
+				</div>
+				<div class="ResoouBox_Container">
+									 <div class="ResouBox_TextContainer">
+										 <a href="">
+											 <div class="Resou_Content">2019年央视元宵晚会</div>
+											 <div class="Resou_Time">2月18日 20:14</div>
+										 </a>
+									</div>
+									 <div class="ResouBox_ImgContainer"><a href=""><img src="image/display1.png" alt=""></a></div>
+				</div>
+				 <div class="ResoouBox_Container">
+				 					 <div class="ResouBox_TextContainer">
+				 						 <a href="">
+				 							 <div class="Resou_Content">2019年央视元宵晚会</div>
+				 							 <div class="Resou_Time">2月18日 20:14</div>
+				 						 </a>
+				 					</div>
+				 					 <div class="ResouBox_ImgContainer"><a href=""><img src="image/display1.png" alt=""></a></div>
+				 </div>
+			</div>
+		    
+		</div>
+		<div id="SearchBar">
+			 <div class="SearchBar_Box"  onclick="insert(1)"><img src="image/1.png" alt=""><div id="box1">网红滤镜下的baby </div></div>
+			<div class="SearchBar_Box"  onclick="insert(2)"><img src="image/2.png" alt=""><div id="box2">刘谦魔术穿帮</div></div>
+			<div class="SearchBar_Box"  onclick="insert(3)"><img src="image/3.png" alt=""><div id="box3">考研成绩</div></div>
+			<div class="SearchBar_Box"  onclick="insert(4)"><img src="image/4.png" alt=""><div id="box4">加拿大电鳗</div></div>
+		    <div class="SearchBar_Box"  onclick="insert(5)"><img src="image/5.png" alt=""><div id="box5">元宵节</div></div>
+			<div class="SearchBar_Box"  onclick="insert(6)"><img src="image/6.png" alt=""><div id="box6">孙笑川与吴亦凡battle</div></div>
+			<div class="SearchBar_Box"  onclick="insert(7)"><img src="image/7.png" alt=""><div id="box7">孙笑川点评蔡徐坤球技</div></div>
+		    <div class="SearchBar_Box"  onclick="insert(8)"><img src="image/8.png" alt=""><div id="box8">孙笑川将与蔡徐坤合作</div></div>
+			<div class="SearchBar_Box"  onclick="insert(9)"><img src="image/9.png" alt=""><div id="box9">蔡徐坤球技</div></div>
+			
+		</div>
+		<input type="button" name="" id="back" value="返回顶部" onclick="backtop()"/>
+		<div id="shuaxin" onclick="next();"> 点击刷新</div>
+	</body>
+	<script type="text/javascript">
+			window.onscroll = function(){ 
+			   var t = document.documentElement.scrollTop || document.body.scrollTop; 
+			   var top = document.getElementById( "back" ); 
+			   if( t >= 120 ) { 
+			   top.style.display = "block"; 
+			      } 
+			        else { 
+			   top.style.display = "none"; 
+			    } 
+			} 
+			
+			 var targetsite=0;
+	        var topsite = 0; 
+	       var time=null;
+	
+	
+	function backtop () {
+	               clearInterval(time);
+	                topsite=document.documentElement.scrollTop || document.body.scrollTop; 
+	               time = setInterval(function () {
+	               	var step=(targetsite-topsite)/5;
+				     step = step>0?Math.ceil(step):Math.floor(step);
+				     topsite=topsite+step;
+	               window.scrollTo(0,topsite);  
+	             if(topsite===0){
+	                	clearInterval(time);
+	
+	                }
+	
+	            },25);
+	
+	        }
+			
+			 function InputColorChange()
+			 {  
+				 var box= document.getElementById("Nav_InputBox");
+				 box.setAttribute("style","border:0.2rem solid rgb(250,125,60);background: rgb(255,255,255);");
+				 var input=document.getElementById("Nav_InputBox_Input");
+				  input.setAttribute("style","background: rgb(255,255,255);");
+				  var box2=document.getElementById("SearchBar");
+				  box2.setAttribute("style","display:flex;")
+				 
+			 }
+			 function InputColorLose(){
+				var box= document.getElementById("Nav_InputBox");
+			     box.setAttribute("style","border: 0.2rem solid rgb(204,204,204);border-radius: 1rem;background: rgb(242,242,245);");
+			          var input=document.getElementById("Nav_InputBox_Input");
+					  input.setAttribute("style","background:rgb(242,242,245);");
+					var box2=document.getElementById("SearchBar");
+					box2.setAttribute("style","display:none;")
+			 }
+			 function ColorLoseName()
+			 {
+				 var box=document.getElementById("NameBox");
+				 box.setAttribute("style","border: 0.3rem solid rgb(242,242,245);")
+			 }
+			  function ColorLosePassword()
+			 {
+			 				 var box=document.getElementById("PasswordBox");
+			 				 box.setAttribute("style","border: 0.3rem solid rgb(242,242,245);")
+			 }
+			 function ColorChangeName()
+			 {
+				  var box=document.getElementById("NameBox");
+				 box.setAttribute("style","border: 0.3rem solid rgb(250,125,60);")
+			 }
+			 function ColorChangePassword()
+			 {
+			 				  var box=document.getElementById("PasswordBox");
+			 				 box.setAttribute("style","border: 0.3rem solid rgb(250,125,60);")
+			 }
+			 function textCount()
+			 {   var color=document.getElementById("WeiboTextarea");
+			     color.setAttribute("style","border: 0.3rem solid rgb(247,103,29);")
+				var input=document.getElementById("WeiboTextarea").value;
+				var string=input.length;
+				var count=document.getElementById("Output_TR");
+				if(count>120)
+				{
+					count.innerHTML="输入字数超过120了！"
+				}else{
+					count.innerHTML="你已经输入了"+string+"个字";
+				}
+			}
+			
+		function inputColorChange(){
+			var box=document.getElementById("WeiboTextarea");
+			box.setAttribute("style","border: 0.3rem solid rgb(242,242,245);")
+		
+		}
+		function weiboCheck(){
+			var input=document.getElementById("WeiboTextarea").value;
+			var string=input.length;
+			if (string==0)
+			{
+				alert("微博输入的内容不能为空")
+			}
+		}
+		function insert(index)
+		{
+			var box=document.getElementById("box"+index);
+			var string=box.innerHTML;
+		
+			var input=document.getElementById("Nav_InputBox_Input");
+			input.value=string;
+		}
+		function changImg(index)
+		{
+			var box=document.getElementsByClassName("Main_DisplayBox");
+			box[0].setAttribute("style","background:url(image/display"+index+".png) no-repeat; background-size: 100% 100%;");
+			var color=document.getElementById("change"+index);
+			color.setAttribute("style","background:red;");
+			 if (index==1)
+			 {
+				 count=4;
+			 }
+			 else{
+				 count=index-1;
+			 }
+			
+			var colorP=document.getElementById("change"+count);
+			colorP.setAttribute("style","background:black;");
+		}
+		var timer=null;
+		var count=1;
+		function play()
+		{    var count=1;
+			timer=setInterval(function(){
+				if(count>4)
+				{
+					count=1;
+				}
+				var box=document.getElementById("change"+count);
+				box.onclick();
+				count++;
+			} ,1500)
+		}
+		play();
+		function dianzan(index)
+		{
+			var img=document.getElementById("dianzan"+index);
+			
+			var string=img.getAttribute("target");
+		     var box=document.getElementById("dianzanS"+index)
+			 
+			 var count=parseInt(box.innerHTML);
+			var time;
+			if (string=="1")
+			{
+				img.setAttribute("style","filter:none;opacity:1;")
+				img.setAttribute("target","0");
+				count=count+1;
+				 var countR=String(count);
+				 box.innerHTML=countR;
+				 var zan=document.getElementById("zanImg");
+				 
+				 var deg=0;
+				
+				 time=setInterval(function(){
+					 if (deg<360){
+						
+						 zan.setAttribute("style","transform:rotate("+deg+"deg);display:block");
+						 deg=deg+1;
+						 
+					 }
+					 if(deg>=360)
+					 {
+						 clearInterval(time);
+						  zan.setAttribute("style","display:none;");
+					 }
+				 },5)
+				
+				
+			}
+			if (string=="0")
+			{
+				img.setAttribute("style","filter:grayscale(100%);opacity:0.8;");
+				img.setAttribute("target","1");
+				count=count-1;
+				var countR=String(count);
+				box.innerHTML=countR;
+				 var zan=document.getElementById("zanImg");
+				
+				var deg=0;
+								
+				time=setInterval(function(){
+									 if (deg<360){
+										
+										 zan.setAttribute("style","transform:rotate("+deg+"deg);display:block");
+										 deg=deg+1;
+										 
+									 }
+									 if(deg>=360)
+									 {
+										 clearInterval(time);
+										  zan.setAttribute("style","display:none;");
+									 }
+				},5)
+				 		
+			}
+			
+		}
+		var myid;
+		function chushihuadenglukuang()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			{
+			
+				xmlhttp=new XMLHttpRequest();
+			}
+			else
+			{
+			
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.open("post","service/homepage",true);
+			xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+			xmlhttp.send();
+			xmlhttp.onreadystatechange=function(){
+				if (xmlhttp.readyState==4 && xmlhttp.status==200){
+					var json=JSON.parse(xmlhttp.responseText);
+					var city=json.city;
+					var messagenum=json.messagenum;
+					var sex=json.sex;
+					var profile=json.profile;
+					var follows=json.follows;
+					var house=json.house;
+					var true_name=json.true_name;
+					var nick_name=json.nick_name;
+					var attention=json.attention;
+					var id=json.id;
+					var state=json.state;
+					var account=json.account;
+					var hobby=json.hobby;
+					var head=json.head;
+					var Login_touxiang=document.getElementById("Login_touxiang");
+					Login_touxiang.setAttribute("src",head);
+					var Login_mingzi=document.getElementById("Login_mingzi");
+					Login_mingzi.innerHTML="你好！"+nick_name;
+					var Login_guanzhu=document.getElementById("Login_guanzhu");
+					Login_guanzhu.innerHTML="关注  :"+attention;
+					var Login_fensi=document.getElementById("Login_fensi");
+					Login_fensi.innerHTML="粉丝  :"+follows;
+					var Login_shoucang=document.getElementById("Login_shoucang");
+					Login_shoucang.innerHTML="收藏  :"+house;
+					myid=json.id;
+				}
+			}
+		}
+	
+	
+		 function chushihuaShouye(){
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			{
+				xmlhttp=new XMLHttpRequest();
+			}
+			else
+			{
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.open("post","/later",true);
+			xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+			xmlhttp.send();
+			xmlhttp.onreadystatechange=function()
+			{
+				if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{
+					var json=JSON.parse(xmlhttp.responseText);
+					var count=json.length;
+					var i=0;
+					var Main_Use_WeiboContainer=document.getElementById("Main_Use_WeiboContainer");
+					var q=Main_Use_WeiboContainer.childNodes;
+					var w=q.length-1;
+					for (w=q.length-1;w>=0;w--){
+						Main_Use_WeiboContainer.removeChild(q[w]);
+					}
+					for (i=0;i<4&&i<json.length;i++){
+
+
+
+
+						var Main_WeiboContainer=document.createElement("DIV");
+						Main_WeiboContainer.setAttribute("style","width: 88rem;height: 17.3rem;border-bottom: 0.3rem solid rgb(229,229,229);display: flex;flex-direction: row;align-items: center;justify-content: space-around;");
+						Main_Use_WeiboContainer.appendChild(Main_WeiboContainer);
+
+						var Weibo_ImgContainer=document.createElement("DIV");
+						Weibo_ImgContainer.setAttribute("style","height: 12rem;width: 17rem;");
+						if (json[i].photo!=null){
+							var img=document.createElement("IMG");
+							img.setAttribute("src",json[i].photo);
+							img.setAttribute("style","width: 100%;height:100%;");
+							Weibo_ImgContainer.appendChild(img);
+						}
+						Main_WeiboContainer.appendChild(Weibo_ImgContainer);
+
+						var Weibo_RightContainer=document.createElement("DIV");
+						Weibo_RightContainer.setAttribute("style","height: 15rem;width:60rem;display: flex;flex-direction: column;justify-content: center;");
+						Main_WeiboContainer.appendChild(Weibo_RightContainer);
+
+						var Weibo_RTContent=document.createElement("DIV");
+						Weibo_RTContent.setAttribute("style","height: 3rem;width: 60rem;margin: 0 auto;line-height: 3rem;font-size: 1.5rem;");
+						var a=document.createElement("A");
+						a.setAttribute("href","/详情页3.html");
+						a.setAttribute("onclick","tiaozhuanMessnumber("+json[i].num+");");
+						a.innerHTML=json[i].info;
+						Weibo_RTContent.appendChild(a);
+						Weibo_RightContainer.appendChild(Weibo_RTContent);
+
+						var Weibo_RBContent=document.createElement("DIV");
+						Weibo_RBContent.setAttribute("style","height: 2rem;width: 60rem;margin: 0 auto;margin-top: 2rem;display: flex;flex-direction: row;");
+						Weibo_RightContainer.appendChild(Weibo_RBContent);
+						var a2=document.createElement("A");
+						a2.innerHTML=json[i].nick_name;
+						Weibo_RBContent.appendChild(a2);
+						a2.setAttribute("href","/personPageOther.html");
+						a2.setAttribute("onclick","tiaozhuanid("+json[i].id+",this);");
+
+
+					}
+				}
+			}
+
+		}
+	 
+	        var countLimit;
+			var xml;
+			if (window.XMLHttpRequest)
+			{
+				xml=new XMLHttpRequest();
+			}
+			else
+			{
+				xml=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xml.open("post","/later",true);
+			xml.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+			xml.send();
+			xml.onreadystatechange=function(){
+				if (xml.readyState==4 && xml.status==200){
+					var Qson=JSON.parse(xml.responseText);
+					countLimit=Qson.length-1;
+				}
+			}
+			var countMax=3;
+	function pre(){
+				if (countMax-3<=0){
+					alert("不能向前翻页了");
+				}
+				else{
+					countMax=countMax-4;
+					var xmlhttp;
+					if (window.XMLHttpRequest)
+					{
+						xmlhttp=new XMLHttpRequest();
+					}
+					else
+					{
+						xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+					}
+					xmlhttp.open("post","/later",true);
+					xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+					xmlhttp.send();
+					xmlhttp.onreadystatechange=function()
+					{
+						if (xmlhttp.readyState==4 && xmlhttp.status==200)
+						{
+							var json=JSON.parse(xmlhttp.responseText);
+							var count=json.length;
+							var i=countMax-3;
+							var Main_Use_WeiboContainer=document.getElementById("Main_Use_WeiboContainer");
+							var q=Main_Use_WeiboContainer.childNodes;
+							var w=q.length-1;
+							for (w=q.length-1;w>=0;w--){
+								Main_Use_WeiboContainer.removeChild(q[w]);
+							}
+							for (i=countMax-3;i<=countMax;i++){
+	
+	
+	
+	
+								var Main_WeiboContainer=document.createElement("DIV");
+								Main_WeiboContainer.setAttribute("style","width: 88rem;height: 17.3rem;border-bottom: 0.3rem solid rgb(229,229,229);display: flex;flex-direction: row;align-items: center;justify-content: space-around;");
+								Main_Use_WeiboContainer.appendChild(Main_WeiboContainer);
+	
+								var Weibo_ImgContainer=document.createElement("DIV");
+								Weibo_ImgContainer.setAttribute("style","height: 12rem;width: 17rem;");
+								if (json[i].photo!=null){
+									var img=document.createElement("IMG");
+									img.setAttribute("src",json[i].photo);
+									img.setAttribute("style","width: 100%;height:100%;");
+									Weibo_ImgContainer.appendChild(img);
+								}
+								Main_WeiboContainer.appendChild(Weibo_ImgContainer);
+	
+								var Weibo_RightContainer=document.createElement("DIV");
+								Weibo_RightContainer.setAttribute("style","height: 15rem;width:60rem;display: flex;flex-direction: column;justify-content: center;");
+								Main_WeiboContainer.appendChild(Weibo_RightContainer);
+	
+								var Weibo_RTContent=document.createElement("DIV");
+								Weibo_RTContent.setAttribute("style","height: 3rem;width: 60rem;margin: 0 auto;line-height: 3rem;font-size: 1.5rem;");
+								var a=document.createElement("A");
+								a.setAttribute("href","/详情页3.html");
+								a.setAttribute("onclick","tiaozhuanMessnumber("+json[i].num+");");
+								a.innerHTML=json[i].info;
+								Weibo_RTContent.appendChild(a);
+								Weibo_RightContainer.appendChild(Weibo_RTContent);
+	
+								var Weibo_RBContent=document.createElement("DIV");
+								Weibo_RBContent.setAttribute("style","height: 2rem;width: 60rem;margin: 0 auto;margin-top: 2rem;display: flex;flex-direction: row;");
+								Weibo_RightContainer.appendChild(Weibo_RBContent);
+								var a2=document.createElement("A");
+								a2.innerHTML=json[i].nick_name;
+								Weibo_RBContent.appendChild(a2);
+								    a2.setAttribute("href","/personPageOther.html");
+								a2.setAttribute("onclick","tiaozhuanid("+json[i].id+",this);");
+	
+	
+							}
+						}
+					}
+	
+				}
+			}
+			function next(){
+				if ((countMax+1)>countLimit)
+				{
+					alert("不能向后翻页了");
+				}
+				else{
+					countMax=countMax+4;
+					var xmlhttp;
+					if (window.XMLHttpRequest)
+					{
+						xmlhttp=new XMLHttpRequest();
+					}
+					else
+					{
+						xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+					}
+					xmlhttp.open("post","/later",true);
+					xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+					xmlhttp.send();
+					xmlhttp.onreadystatechange=function()
+					{
+						if (xmlhttp.readyState==4 && xmlhttp.status==200)
+						{
+							var json=JSON.parse(xmlhttp.responseText);
+							var count=json.length;
+							var i=0;
+							var Main_Use_WeiboContainer=document.getElementById("Main_Use_WeiboContainer");
+							var q=Main_Use_WeiboContainer.childNodes;
+							var w=q.length-1;
+							for (w=q.length-1;w>=0;w--){
+								Main_Use_WeiboContainer.removeChild(q[w]);
+							}
+							for (i=countMax-3;i<=countMax;i++){
+	
+	
+	
+	
+								var Main_WeiboContainer=document.createElement("DIV");
+								Main_WeiboContainer.setAttribute("style","width: 88rem;height: 17.3rem;border-bottom: 0.3rem solid rgb(229,229,229);display: flex;flex-direction: row;align-items: center;justify-content: space-around;");
+								Main_Use_WeiboContainer.appendChild(Main_WeiboContainer);
+	
+								var Weibo_ImgContainer=document.createElement("DIV");
+								Weibo_ImgContainer.setAttribute("style","height: 12rem;width: 17rem;");
+								if (json[i].photo!=null){
+									var img=document.createElement("IMG");
+									img.setAttribute("src",json[i].photo);
+									img.setAttribute("style","width: 100%;height:100%;");
+									Weibo_ImgContainer.appendChild(img);
+								}
+								Main_WeiboContainer.appendChild(Weibo_ImgContainer);
+	
+								var Weibo_RightContainer=document.createElement("DIV");
+								Weibo_RightContainer.setAttribute("style","height: 15rem;width:60rem;display: flex;flex-direction: column;justify-content: center;");
+								Main_WeiboContainer.appendChild(Weibo_RightContainer);
+	
+								var Weibo_RTContent=document.createElement("DIV");
+								Weibo_RTContent.setAttribute("style","height: 3rem;width: 60rem;margin: 0 auto;line-height: 3rem;font-size: 1.5rem;");
+								var a=document.createElement("A");
+								a.setAttribute("href","/详情页3.html");
+								a.setAttribute("onclick","tiaozhuanMessnumber("+json[i].num+");");
+								a.innerHTML=json[i].info;
+								Weibo_RTContent.appendChild(a);
+								Weibo_RightContainer.appendChild(Weibo_RTContent);
+	
+								var Weibo_RBContent=document.createElement("DIV");
+								Weibo_RBContent.setAttribute("style","height: 2rem;width: 60rem;margin: 0 auto;margin-top: 2rem;display: flex;flex-direction: row;");
+								Weibo_RightContainer.appendChild(Weibo_RBContent);
+								var a2=document.createElement("A");
+								a2.innerHTML=json[i].nick_name;
+								Weibo_RBContent.appendChild(a2);
+	                         a2.setAttribute("href","/personPageOther.html");
+	                         a2.setAttribute("onclick","tiaozhuanid("+json[i].id+",this);");
+	
+							}
+						}
+					}
+				}
+			}
+			
+			 function tiaozhuanid(id,obj){
+						alert(id);
+						alert(typeof (id));
+						if(id==myid){
+							obj.setAttribute("href","personPage.html");
+						}
+				   var xmlhttp;
+				   if (window.XMLHttpRequest)
+				   {
+					   xmlhttp=new XMLHttpRequest();
+				   }
+				   else
+				   {
+					   xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				   }
+				   xmlhttp.open("post","/service/viewother",true);
+				   xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+				   xmlhttp.send("OtherId="+id);
+			}
+			
+			
+			
+	function tiaozhuanMessnumber(num){
+				alert(num);
+				alert(typeof (num));
+		   var xmlhttp;
+		   if (window.XMLHttpRequest)
+		   {
+			   xmlhttp=new XMLHttpRequest();
+		   }
+		   else
+		   {
+			   xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		   }
+		   xmlhttp.open("post","/info.do",true);
+		   xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		   xmlhttp.send("msnum="+num);
+	}
+	        
+			
+			
+			
+			
+	     function qiehuanzuixin(){
+	     	var xmlhttp;
+				 if (window.XMLHttpRequest)
+				 {
+					 xmlhttp=new XMLHttpRequest();
+				 }
+				 else
+				 {
+					 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				 }
+				 xmlhttp.open("post","service/CollectionInfo",true);
+				 xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+				 xmlhttp.send();
+				 xmlhttp.onreadystatechange=function()
+				 {
+					 if (xmlhttp.readyState==4 && xmlhttp.status==200)
+					 {   
+					 	 countMax=5;
+					 	 countLimit=json.length-1;
+						 var json=JSON.parse(xmlhttp.responseText);
+						 var count=json.length;
+						 var i=0;
+						 var Main_Use_WeiboContainer=document.getElementById("Main_Use_WeiboContainer");
+						 var q=Main_Use_WeiboContainer.childNodes;
+						 var w=q.length-1;
+						 for (w=q.length-1;w>=0;w--){
+							 Main_Use_WeiboContainer.removeChild(q[w]);
+						 }
+						 for (i=0;i<6&&i<json.length;i++){
+							 var Main_WeiboContainer=document.createElement("DIV");
+							 Main_WeiboContainer.setAttribute("style","width: 88rem;height: 17.3rem;border-bottom: 0.3rem solid rgb(229,229,229);display: flex;flex-direction: row;align-items: center;justify-content: space-around;");
+							 Main_Use_WeiboContainer.appendChild(Main_WeiboContainer);
+	
+							 var Weibo_ImgContainer=document.createElement("DIV");
+							 Weibo_ImgContainer.setAttribute("style","height: 12rem;width: 17rem;");
+	
+								 var img=document.createElement("IMG");
+								 img.setAttribute("src",json[i].photo);
+								 img.setAttribute("style","width: 100%;height:100%;");
+								 Weibo_ImgContainer.appendChild(img);
+	
+							 Main_WeiboContainer.appendChild(Weibo_ImgContainer);
+	
+							 var Weibo_RightContainer=document.createElement("DIV");
+							 Weibo_RightContainer.setAttribute("style","height: 15rem;width:60rem;display: flex;flex-direction: column;justify-content: center;");
+							 Main_WeiboContainer.appendChild(Weibo_RightContainer);
+	
+							 var Weibo_RTContent=document.createElement("DIV");
+							 Weibo_RTContent.setAttribute("style","height: 3rem;width: 60rem;margin: 0 auto;line-height: 3rem;font-size: 1.5rem;");
+							 var a=document.createElement("A");
+							 a.setAttribute("href","nmsl");
+							 a.innerHTML=json[i].info;
+							 Weibo_RTContent.appendChild(a);
+							 Weibo_RightContainer.appendChild(Weibo_RTContent);
+	
+							 var Weibo_RBContent=document.createElement("DIV");
+							 Weibo_RBContent.setAttribute("style","height: 2rem;width: 60rem;margin: 0 auto;margin-top: 2rem;display: flex;flex-direction: row;");
+							 Weibo_RightContainer.appendChild(Weibo_RBContent);
+							 var a2=document.createElement("A");
+							 a2.innerHTML=json[i].nick_name;
+							 Weibo_RBContent.appendChild(a2);
+						 }
+					 }
+				 }
+	
+	     }
+
+
+	    
+	
+		window.onload=function(){
+			chushihuadenglukuang();
+			chushihuaShouye();
+		}
+		</script>
+</html>

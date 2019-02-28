@@ -1,0 +1,1130 @@
+
+<html>
+	<head>
+	<link rel="icon" href="image/icon.ico" type="image/x-icon" />  
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>个人主页</title>
+		<style type="text/css">
+			*{
+				margin: 0rem;
+				padding: 0rem;
+				text-decoration: none;
+			}
+			html
+			{
+				box-sizing:border-box;
+				font-size:12px;
+	        }
+			
+			
+			#NavBox{
+			   position:fixed;
+			   display: flex;
+			   flex-direction: row;
+			   width: 160rem;
+			   height: 6rem;
+			   background: rgba(255, 255, 255, 0.9);
+			   	z-index: 9999;
+				left: 0;
+				top: 0;
+				border-top: 0.4rem solid rgb(239,107,18);
+			}
+			.Nav_LogoBox{
+			height: 6rem;
+			width:15rem;
+			background: url(/image/topLogo.jpg);
+			background-size:100% 100%;
+			background-repeat: no-repeat;
+			margin-left: 18rem;
+			}
+			#Nav_InputBox{
+				width: 28rem;
+				height:4rem;
+				background: yellow;
+				margin-left:20rem ;
+				margin-top: 1rem;
+				border: 0.2rem solid rgb(204,204,204);
+				border-radius: 1rem;
+				background: rgb(242,242,245);
+			}
+				#Nav_InputBox_Input{
+					font-size: 2rem;
+				display: inline-block;
+				background:  rgb(242,242,245);
+				width: 22.5rem;
+				height: 3rem;
+				margin-top: 0.5rem;
+				margin-left: 1rem;
+				outline: none;
+				border: 0rem;
+				
+			}
+			#Search{
+				  position: absolute;
+				  left: 76.5rem;
+				  top: 0.5rem;
+				  width: 0rem;
+				  height: 0rem;
+				  
+			}
+			.Nav_Guide{
+				height: 4rem;
+				width: 44rem;
+				
+				margin-left: 10rem ;
+				display: flex;
+				flex-direction: row;
+				
+			}
+			.Nav_Guide div{
+				height: 4rem;
+				width: 11rem;
+				
+				margin-top:1.2rem;
+				line-height: 4rem;
+				vertical-align: center;
+				text-align: center;
+				font-size: 2rem;
+			}
+			.Nav_Guide div img{
+				display: inline-block;
+				margin-top: 0.2rem;
+				width: 2rem;
+				height: 2rem;
+				filter:grayscale(1000%);
+				   opacity: 0.8;
+			}
+				.Nav_Guide_Shouye:hover img,.Nav_Guide_Shipin:hover img,.Nav_Guide_faxian:hover img,.Nav_Guide_youxi:hover img{
+					filter: none;
+					opacity: 1;
+				}
+				.Nav_Guide_Shouye:hover ,.Nav_Guide_Shipin:hover ,.Nav_Guide_faxian:hover ,.Nav_Guide_youxi:hover {
+					color: rgb(239,107,18);
+				}
+			
+			.Nav_RAL{
+				height: 6rem;
+				width: 15rem;
+				
+				margin-left: 2rem;
+				line-height: 6rem;
+				text-align: center;
+				font-size: 2rem;
+			}
+			.Nav_RAL a{
+				color:black;
+			}
+			.Nav_RAL a:hover{
+				color:  rgb(239,107,18);
+			}
+			.Main{
+				width: 160rem;
+				height: 160rem;
+				background: url("/image/backgroundPerson.jpg") no-repeat;
+				background-size:100% 100%;
+				display: flex;
+				flex-direction: column;
+			}
+			#Main_UserImage{
+				background: black;
+				width: 12rem;                                  
+				height:12rem;
+				margin-left: 74rem;
+				margin-top: 12rem;
+				border-radius: 500rem;
+				overflow: hidden;
+				}
+				#Main_UserImage_Content{
+					width: 100%;
+					height: 100%;
+				}
+				#Main_UserName{
+					background: white;
+					width: 20rem;
+					height: 4rem;
+					line-height: 4rem;
+					text-align: center;
+					font-size: 2.5rem;
+					font-weight: bolder;
+					margin-left: 70rem;
+					margin-top: 0.5rem;
+					background-color:rgba(0,0,0,0);
+				}
+				#Main_UserDescription{
+					background:white;
+					width:35rem;
+					height:3.5rem;
+					line-height: 3.5rem;
+					text-align: center;
+						font-weight: bolder;
+						font-size: 1.8rem;
+					margin-left: 62.5rem;
+					margin-top: 0.5rem;
+					background-color:rgba(0,0,0,0);
+				}
+				#Main_User_Container{
+					width: 120rem;
+					height: 80rem;
+					margin-left:20rem ;
+					background: rgba(0,0,0,0);
+					margin-top:5rem;
+					display: flex;
+					flex-direction: column;
+				}
+				#Main_User_Page{
+					width: 120rem;
+					height: 3rem;
+					font-size: 2rem;
+					font-weight: bold;
+					text-align: center;
+					line-height: 3rem;
+					background: white;
+					border-radius: 1rem;
+					-moz-box-shadow:0px 3px 5px #333333; -webkit-box-shadow:0px 3px 5px #333333; box-shadow:0px 3px 5px #333333;
+				
+				}
+				#Main_User_Container_Second{
+					width: 120rem;
+					height: 75rem;
+					
+					margin-top: 2rem;
+					display: flex;
+					flex-direction: row;
+				}
+				#Main_User_Container_Second_left{
+					width: 28rem;
+					height: 68rem;
+					background: white;
+					display: flex;
+					flex-direction: column;
+					border-radius: 1rem;
+					}
+					#Main_User_Container_Second_left_GFW{
+					   	width: 28rem;
+						height: 10rem;
+						background: white;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-around;
+						align-items: center;
+						border-radius: 1rem;
+						-moz-box-shadow:-1px 3px 9px #333333; -webkit-box-shadow:-1px 3px 9px #333333; box-shadow:-1px 3px 9px #333333;
+					}
+					#Main_User_Guanzhu,#Main_User_Fensi,#Main_User_Shoucang{
+						height:8rem;
+						width: 10rem;
+						line-height: 8rem;
+						text-align: center;
+						font-size: 2rem;
+						font-weight: bolder;
+						
+					}
+					
+				#Main_User_Container_Second_left_INformation{
+				    width:28rem;
+						height: 45rem;
+						background: white;
+						margin-top: 4rem;
+						border-radius: 1rem;
+						border:0.1rem solid black;
+						-moz-box-shadow:-1px 3px 9px #333333; -webkit-box-shadow:-1px 3px 9px #333333; box-shadow:-1px 3px 9px #333333;
+					}
+				#Information_Top{
+					width: 28rem;
+					height: 3.5rem;
+					line-height: 3.5rem;
+					text-align: center;
+					font-weight: bolder;
+					font-size: 3rem;
+					background: white;
+					border-radius: 1rem;
+					border-bottom: 0.5rem solid rgb(242,242,245);
+				}
+				#Information_City,#Information_Hobby,#Information_Name,#Information_Sex{
+					width: 28rem;
+					height:9rem ;
+					
+					margin-top: 1.375rem;
+					display: flex;
+                    flex-direction: row;
+					border-radius: 1rem;
+				}
+				#Information_City,#Information_Name,#Information_Sex{
+					border-bottom: 0.5rem solid rgb(242,242,245);
+				}
+				#Information_City_ImgContainer,#Information_Hobby_IMgContainer,#Information_Name_ImgContainer,#Information_Sex_ImgContainer{
+					background:rgba(0,0,0,0);
+					width: 6rem;
+					height: 6rem;
+					overflow: hidden;
+					margin-top: 1.5rem;
+					margin-left: 2rem;
+				}
+				#Information_City_ImgContainer img,#Information_Hobby_IMgContainer img,#Information_Name_ImgContainer img,#Information_Sex_ImgContainer img{
+					 width: 100%;
+					 height: 100%;
+				}
+				#Information_City_Message,#Information_Hobby_Message,#Information_Name_Message,#Information_Sex_Message{
+					height:3rem;
+					width: 19rem;
+					background: white;
+					margin-left: 2rem;
+					font-weight: bold;
+					font-size: 2rem;
+					margin-top: 3.5rem;
+					line-height: 3rem;
+					overflow: hidden;
+				}
+				#Information_Modify{
+					width: 18rem;
+					height: 6rem;
+					background: ;
+					margin: 0 auto;
+					margin-top: 0rem;
+					line-height: 6rem;
+					text-align: center;
+					font-size: 2rem;
+					color: white;
+					background: rgb(255,192,159);
+					border-radius: 1rem;
+				}
+				#Information_Modify a{
+					color:white;
+				}
+				#Information_Modify:hover{
+					background: rgb(255,129,64);
+				}
+					#Main_User_Container_Second_right{
+						width: 88rem;
+						height: 110rem;
+						background:white;
+						margin-left: 4rem;
+						display: flex;
+						flex-direction: column;
+					}
+					#Main_User_Container_Second_right_Wfgdwb{
+						 width: 88rem;
+						 height: 4rem;
+						 text-align: center;
+						background: white;
+						 line-height: 4rem;
+						 font-weight: bold;
+						 font-size: 3.5rem;
+						 border-top-right-radius:1rem ;
+						 border-top-left-radius: 1rem;
+					}
+				#Main_User_Container_Second_right_PAN{
+					width: 88rem;
+					height: 4rem;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					
+				}
+				#Prev,#Next
+				{
+					 height: 4rem;
+					 width: 8rem;
+					 background: white;
+				}
+				#Main_Use_WeiboContainer{
+					width: 88rem;
+					height:100rem;
+					
+					margin-top: 2rem;
+					display: flex;
+					flex-direction: column;
+					border-radius: 1rem;
+				}
+				.guanzhuBox{
+					width: 87rem;
+					height: 10rem;
+					background: rgb(242,242,245);
+					border-radius: 1rem;
+					margin-top: 0.6rem;
+					border:0.2rem solid rgb(242,242,245);
+					box-shadow:-1px 4px 14px #333333;
+					display:flex;
+					flex-direction: row;
+					align-items: center;
+				}
+			  .guanzhuImgbox{
+				   width:8rem;
+				   height: 8rem;
+				   background: white;
+				   border-radius: 10rem;
+				   margin-left: 1rem;
+				   overflow: hidden;
+			  }
+			  .guanzhuImgbox img{
+				  width: 100%;
+				  height: 100%;
+			  }
+			  .guanzhuName{
+				  width: 30rem;
+				  height: 3rem;
+				  line-height: 3rem;
+				  font-weight: bold;
+				  font-size: 2rem;
+				  vertical-align: middle;
+				  background: rgb(242,242,245);
+				  margin-left: 10rem;
+			  }
+			  #guanzhu1,#guanzhu2,#guanzhu3,#guanzhu4,#guanzhu5,#guanzhu6,#guanzhu7,#guanzhu8,#guanzhu9{
+				  width: 10rem;
+				  height: 3rem;
+				  font-size: 2rem;
+				  margin-left: 25rem;
+				  outline: none;
+				  border: 0rem;
+				  background: rgb(255,129,64);
+				  border-radius: 2rem;
+				  
+			  }
+				.UserWeibo_Content{
+					height:4rem;
+					width: 50rem;
+					background: red;
+				}
+				#PrevButton,#NextButton{
+					display: inline-block;
+					height: 4rem;
+                    width: 8rem;
+					outline: none;
+					border: 0rem;
+					background: rgb(255,192,159);
+					border-radius: 1rem;
+				}
+				#PrevButton:hover,#NextButton:hover{
+					background: rgb(255,129,64);
+				}
+				#Weibo_out{
+					width: 120rem;
+                       height: 35rem;
+					   background: white;
+					   margin: 0 auto;
+					   margin-top: 5rem;
+					   display: flex;
+                       flex-direction:column;
+					   align-items: center;
+					   
+					 }
+					 #Weibo_out_TopBox{
+						 width: 120rem;
+						 height: 5rem;
+						 text-align: center;
+						 background: red;
+						 line-height:5rem;
+						 font-weight: bold;
+						 font-size: 2rem;
+						 
+					 }
+					 #Weibo_out_Context{
+						 width: 110rem;
+						 height: 15rem;
+						 margin-top: 4rem;
+						 font-size: 3rem;
+						 size: 2rem;
+					 }
+					 #Weibo_out_Bottom{
+						 background: red;
+						 width:110rem;
+						 height: 5rem;
+						 margin-top:3rem ;
+						 display: flex;
+						 flex-direction: row;
+						 justify-content: space-between;
+					 }
+					 #Weibo_out_BottomLeft{
+						 height: 5rem;
+						 width: 40rem;
+						 background: black;
+						 display: flex;
+						 flex-direction: row;
+					 }
+					 #Weibo_out_BottomRight{
+						 height: 5rem;
+						 width: 20rem;
+						 
+					 }
+					 .BottomLeft_Box{
+						 height: 5rem;
+						 width: 10rem;
+						 background: yellow;
+						 }
+						 .Main_WeiboContainer{
+				width: 88rem;
+				height: 17.3rem;
+				
+				border-bottom: 0.3rem solid rgb(229,229,229);
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+			}
+			.Weibo_ImgContainer{
+				
+				height: 12rem;
+				width: 17rem;
+			}
+			.Weibo_ImgContainer img{
+				width: 100%;
+				height: 100%;
+			}
+			.Weibo_RightContainer{
+				
+				height: 15rem;
+				width: 60rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				}
+				.Weibo_RTContent{
+					
+					height: 3rem;
+					width: 60rem;
+					margin: 0 auto;
+					line-height: 3rem;
+					
+					font-size: 1.5rem;
+				}
+				.Weibo_RBContent{
+					
+					height: 2rem;
+					width: 60rem;
+					margin: 0 auto;
+					margin-top: 2rem;
+					display: flex;
+					flex-direction: row;
+					}
+					.Weibo_RBImgContainer{
+						height: 2rem;
+						width:2rem;
+						
+						border-radius: 5rem;
+						overflow: hidden;
+					}
+					.Weibo_RBImgContainer img{
+						width: 100%;
+						height: 100%;
+					}
+					.Weibo_RBContext{
+						height: 2rem;
+						width: 15rem;
+						
+						line-height: 2rem;
+						margin-left: 1rem;
+					}
+		   .Weibo_RBRContainer{
+		   	height: 2rem;
+		   	width: 30rem;
+		   
+			margin-left:12rem;
+			display: flex;
+			flex-direction: row;
+			}
+			.ForwardContainer,.CommitContainer,.Thumbs-upContainer{
+				height: 2rem;
+				width: 9rem;
+				
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			
+			.ForwardContainer,.CommitContainer{
+				border-right: 0.1rem solid black;
+			}
+			.Weibo_RBRImgContainer{
+				height: 2rem;
+				width: 2rem;
+				
+			}
+			.Weibo_RBRImgContainer img{
+				width: 100%;
+				height: 100%;
+				filter:grayscale(100%);
+				opacity:0.8;
+			}
+			#dianzan1,#dianzan2,#dianzan3,#dianzan4{
+					filter:grayscale(100%);
+				opacity:0.8;
+			}
+			.Weibo_RBRTextContainer{
+				height: 2rem;
+				width: 5rem;
+				
+				font-size: 1rem;
+				line-height: 2rem;
+				text-align: center;
+			}
+				#zanImg{
+			width: 20rem;
+			width: 20rem;
+			position: fixed;
+			top:25rem;
+			left:60rem;
+			z-index: 99999;
+			display: none;
+			opacity: 1;
+		}
+		.BottomBar{
+		width: 88rem;
+		height: 60rem;
+		margin:0 auto;
+		margin-top: 22rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.Bottom_WeiboOutput{
+		width: 88rem;
+		height: 32rem;
+		border: 1rem solid rgb(242,242,245);
+		border-radius: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		-moz-box-shadow:2px 3px 8px #333333; -webkit-box-shadow:2px 3px 8px #333333; box-shadow:2px 3px 8px #333333;
+	}
+	.WeiboOutput_Top{
+		width:88rem;
+		height: 5rem;
+		
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.Output_TL{
+		width: 25rem;
+		height: 5rem;
+		
+		line-height: 5rem;
+		vertical-align: middle;
+		font-size: 2rem;
+		font-weight: bold;
+		margin-left: 2rem;
+	}
+	#Output_TR{
+		height: 5rem;
+		width: 30rem;
+	
+		line-height: 5rem;
+		font-size: 1.8rem;
+		font-weight: bold;
+		margin-left: 6rem;
+		
+	}
+	#WeiboTextarea{
+		width:84rem ;
+		height: 20rem;
+		font-size: 3rem;
+		outline: none;
+		border: 0.3rem solid rgb(242,242,242);
+		-moz-box-shadow:2px 3px 7px #333333; -webkit-box-shadow:2px 3px 7px #333333; box-shadow:2px 3px 7px #333333;
+	}
+	.Output_Bottom{
+		width: 84rem;
+		height: 4rem;
+		
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: row;
+	}
+	.biaoqinBox,.tupianBOx,.shipinBox,.huatiBox{
+		
+		height: 4rem;
+		width: 12rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.8rem;
+		font-weight: bold;
+	}
+	.biaoqinImgBox,.shipinImgBox,.tupianImgBox,.shipinImgBox,.huatiImgBox{
+		height: 4rem;
+		width: 4rem;
+		
+	}
+.biaoqinImgBox img,	.shipinImgBox img,.tupianImgBox img,.shipinImgBox img,.huatiImgBox img{
+		width: 100%;
+		height: 100%;
+	}
+	.weiboSubmit{
+		width: 14rem;
+		height: 4rem;
+	
+		margin-left: 21rem;
+		border-radius: 0.5rem;
+		
+	}
+	.weiboSubmit input{
+		height: 4rem;
+		width: 14rem;
+	    font-size: 3rem;
+		z-index: 998;
+		background: rgb(255,129,64);
+		color: white;
+		outline: none;
+		border: 0rem;
+		border-radius: 0.5rem;
+	}
+	.weiboSubmit input:hover
+	{
+		background: rgb(247,103,29);
+	}
+	#SearchBar{
+		position: fixed;
+		z-index: 1000;
+		background: white;
+		width: 28rem;
+		height: 36rem;
+		left:53rem;
+		top:5.8rem;
+		display: none;
+		flex-direction: column;
+		border-radius: 1rem;
+		-moz-box-shadow:1px 2px 10px #333333; -webkit-box-shadow:1px 2px 10px #333333; box-shadow:1px 2px 10px #333333;
+	}
+	.SearchBar_Box{
+		width: 28rem;
+		height: 4rem;
+		display: flex;
+		flex-direction: row; 
+		  line-height: 4rem;
+		  text-align: center;
+		  font-size: 2rem;
+	}
+	.SearchBar img{
+		height: 2rem;
+		width: 2rem;
+	}
+	#box1:hover ,#box2:hover,#box3:hover,#box4:hover,#box5:hover,#box6:hover,#box7:hover,#box8:hover,#box9:hover,#box10:hover{
+		background: rgba(242,242,245,0.99);
+	}
+		</style>
+		<script type="text/javascript">
+			function dianzan(index)
+		{
+			var img=document.getElementById("dianzan"+index);
+			
+			var string=img.getAttribute("target");
+		     var box=document.getElementById("dianzanS"+index)
+			 
+			 var count=parseInt(box.innerHTML);
+			var time;
+			if (string=="1")
+			{
+				img.setAttribute("style","filter:none;opacity:1;")
+				img.setAttribute("target","0");
+				count=count+1;
+				 var countR=String(count);
+				 box.innerHTML=countR;
+				 var zan=document.getElementById("zanImg");
+				 
+				 var deg=0;
+				
+				 time=setInterval(function(){
+					 if (deg<360){
+						
+						 zan.setAttribute("style","transform:rotate("+deg+"deg);display:block");
+						 deg=deg+1;
+						 
+					 }
+					 if(deg>=360)
+					 {
+						 clearInterval(time);
+						  zan.setAttribute("style","display:none;");
+					 }
+				 },5)
+				
+				
+			}
+			if (string=="0")
+			{
+				img.setAttribute("style","filter:grayscale(100%);opacity:0.8;");
+				img.setAttribute("target","1");
+				count=count-1;
+				var countR=String(count);
+				box.innerHTML=countR;
+				 var zan=document.getElementById("zanImg");
+				
+				var deg=0;
+								
+				time=setInterval(function(){
+									 if (deg<360){
+										
+										 zan.setAttribute("style","transform:rotate("+deg+"deg);display:block");
+										 deg=deg+1;
+										 
+									 }
+									 if(deg>=360)
+									 {
+										 clearInterval(time);
+										  zan.setAttribute("style","display:none;");
+									 }
+				},5)
+				 		
+			}
+			
+		}
+		
+		 function textCount()
+			 {   var color=document.getElementById("WeiboTextarea");
+			     color.setAttribute("style","border: 0.3rem solid rgb(247,103,29);")
+				var input=document.getElementById("WeiboTextarea").value;
+				var string=input.length;
+				var count=document.getElementById("Output_TR");
+				if(count>120)
+				{
+					count.innerHTML="输入字数超过120了！"
+				}else{
+					count.innerHTML="你已经输入了"+string+"个字";
+				}
+			}
+			function inputColorChange(){
+			var box=document.getElementById("WeiboTextarea");
+		box.setAttribute("style","border: 0.3rem solid rgb(242,242,245);")
+			
+		}
+		 function faweibo()
+			 {
+				 var count=document.getElementById("Main_Use_WeiboContainer").children.length;
+				
+				 alert(count);
+				 alert(typeof(count));
+				 var weiboContent=document.getElementById("WeiboTextarea").value;
+				 alert(weiboContent);
+				 alert(typeof(weiboContent));
+			 }
+			 function InputColorChange()
+			 {  
+				 var box= document.getElementById("Nav_InputBox");
+				 box.setAttribute("style","border:0.2rem solid rgb(250,125,60);background: rgb(255,255,255);");
+				 var input=document.getElementById("Nav_InputBox_Input");
+				  input.setAttribute("style","background: rgb(255,255,255);");
+				  var box2=document.getElementById("SearchBar");
+				  box2.setAttribute("style","display:flex;")
+				 
+			 }
+			 function InputColorLose(){
+				var box= document.getElementById("Nav_InputBox");
+			     box.setAttribute("style","border: 0.2rem solid rgb(204,204,204);border-radius: 1rem;background: rgb(242,242,245);");
+			          var input=document.getElementById("Nav_InputBox_Input");
+					  input.setAttribute("style","background:rgb(242,242,245);");
+					var box2=document.getElementById("SearchBar");
+					box2.setAttribute("style","display:none;")
+			 } 
+			function guanzhu(index)
+			{
+				var input=document.getElementById("guanzhu"+index);
+				var target=input.getAttribute("target");
+				if (target=="1")
+				{
+					input.setAttribute("target","0");
+					input.setAttribute("style"," width: 10rem;height:3rem; font-size: 2rem;margin-left: 25rem;outline: none;border: 0rem; background: rgb(255,192,159);border-radius: 2rem;");
+				    input.setAttribute("value","关注");
+				}
+				if (target=="0")
+				{
+					input.setAttribute("target","1");
+					input.setAttribute("style"," width: 10rem;height:3rem; font-size: 2rem;margin-left: 25rem;outline: none;border: 0rem; background: rgb(255,129,64);border-radius: 2rem;");
+				       input.setAttribute("value","取消关注");
+				}
+			}
+			 function chushihuaguanzhu(){
+				 var xmlhttp;
+			if (window.XMLHttpRequest)
+			{
+				xmlhttp=new XMLHttpRequest();
+			}
+			else
+			{
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.open("post","service/following",true);
+			xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+			xmlhttp.send();
+			xmlhttp.onreadystatechange=function()
+			{
+				if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{
+					var json=JSON.parse(xmlhttp.responseText);
+					var count=json.length;
+					var i=0;
+					var Main_Use_WeiboContainer=document.getElementById("Main_Use_WeiboContainer");
+					var q=Main_Use_WeiboContainer.childNodes;
+					var w=q.length-1;
+					for (w=q.length-1;w>=0;w--){
+						Main_Use_WeiboContainer.removeChild(q[w]);
+					}
+					for (i=0;i<8&&i<json.length;i++){
+                           var guanzhuBox=document.createElement("DIV");;
+						   guanzhuBox.setAttribute("class","guanzhuBox");
+						   var guanzhuImgbox=document.createElement("DIV");
+						   guanzhuImgbox.setAttribute("class","guanzhuImgbox");
+						   var img=document.createElement("IMG");
+						   img.setAttribute("scr",json[i].head);
+						   guanzhuImgbox.appendChild(img);
+						   guanzhuBox.appendChild(guanzhuImgbox);
+						   var guanzhuName=document.createElement("DIV");
+						   guanzhuName.innerHTML=json[i].nick_name;
+						   guanzhuBox.appendChild(guanzhuName);
+					}
+				}
+			}
+			 }
+			
+		var countLimit;
+		var xml;
+		if (window.XMLHttpRequest)
+		{
+			xml=new XMLHttpRequest();
+		}
+		else
+		{
+			xml=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xml.open("post","service/message",true);
+		xml.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xml.send();
+		xml.onreadystatechange=function(){
+			if (xml.readyState==4 && xml.status==200){
+				var Qson=JSON.parse(xml.responseText);
+				var countLimit=Qson.length;
+			}
+		}
+		
+		var countMax=8;
+		function prev(){
+			if (countMax-9<0){
+				alert("不能向前翻页了");
+			}
+			else{
+				countMax=countMax-9;
+				var xmlhttp;
+				if (window.XMLHttpRequest)
+				{
+					xmlhttp=new XMLHttpRequest();
+				}
+				else
+				{
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.open("post","service/following",true);
+				xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+				xmlhttp.send();
+				xmlhttp.onreadystatechange=function()
+				{
+					if (xmlhttp.readyState==4 && xmlhttp.status==200)
+					{
+						var json=JSON.parse(xmlhttp.responseText);
+						var count=json.length;
+						var i=countMax-8;
+						var Main_Use_WeiboContainer=document.getElementById("Main_Use_WeiboContainer");
+						var q=Main_Use_WeiboContainer.childNodes;
+						var w=q.length-1;
+						for (w=q.length-1;w>=0;w--){
+							Main_Use_WeiboContainer.removeChild(q[w]);
+						}
+						for (i=countMax-8;i<=countMax;i++){
+                                  var guanzhuBox=document.createElement("DIV");;
+                                 guanzhuBox.setAttribute("class","guanzhuBox");
+                                 var guanzhuImgbox=document.createElement("DIV");
+                                 guanzhuImgbox.setAttribute("class","guanzhuImgbox");
+                                 var img=document.createElement("IMG");
+                                 img.setAttribute("scr",json[i].head);
+                                 guanzhuImgbox.appendChild(img);
+                                 guanzhuBox.appendChild(guanzhuImgbox);
+                                 var guanzhuName=document.createElement("DIV");
+                                 guanzhuName.innerHTML=json[i].nick_name;
+                                 guanzhuBox.appendChild(guanzhuName);
+						}
+					}
+				}
+
+			}
+		}
+		
+		function next(){
+			if ((countMax+9)>countLimit&&countLimit%9!=8){
+				alert("不能向后翻页了");
+			}
+			else{
+				countMax=countMax+9;
+				var xmlhttp;
+				if (window.XMLHttpRequest)
+				{
+					xmlhttp=new XMLHttpRequest();
+				}
+				else
+				{
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.open("post","service/following",true);
+				xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+				xmlhttp.send();
+				xmlhttp.onreadystatechange=function()
+				{
+					if (xmlhttp.readyState==4 && xmlhttp.status==200)
+					{
+						var json=JSON.parse(xmlhttp.responseText);
+						var count=json.length;
+						var i=countMax-8;
+						var Main_Use_WeiboContainer=document.getElementById("Main_Use_WeiboContainer");
+						var q=Main_Use_WeiboContainer.childNodes;
+						var w=q.length-1;
+						for (w=q.length-1;w>=0;w--){
+							Main_Use_WeiboContainer.removeChild(q[w]);
+						}
+						for (i=countMax-8;i<=countMax;i++){
+		                          var guanzhuBox=document.createElement("DIV");;
+		                         guanzhuBox.setAttribute("class","guanzhuBox");
+		                         var guanzhuImgbox=document.createElement("DIV");
+		                         guanzhuImgbox.setAttribute("class","guanzhuImgbox");
+		                         var img=document.createElement("IMG");
+		                         img.setAttribute("scr",json[i].head);
+		                         guanzhuImgbox.appendChild(img);
+		                         guanzhuBox.appendChild(guanzhuImgbox);
+		                         var guanzhuName=document.createElement("DIV");
+		                         guanzhuName.innerHTML=json[i].nick_name;
+		                         guanzhuBox.appendChild(guanzhuName);
+						}
+					}
+				}
+		
+			}
+		}
+			
+			
+			window.onload=function(){
+				chushihuaguanzhu();
+			}
+		</script>
+	</head>
+	<body>
+		<img src="/image/dianzan.png" alt="" id="zanImg">
+		<div id="NavBox">
+			<div class="Nav_LogoBox"></div>
+			
+			<div class="Nav_Guide">
+			     <div class="Nav_Guide_Shouye"><img src="/image/shouyeR.png" >首页</div>
+				 <div class="Nav_Guide_Shipin"><img src="/image/shipinR.png" >视频</div>
+				 <div class="Nav_Guide_faxian"><img src="/image/faxianR.png" >发现</div>
+				 <div class="Nav_Guide_youxi"><img src="/image/youxiR.png" >游戏</div>
+			</div>
+			<div class="Nav_RAL">
+			
+			</div>
+		</div>
+		<div class="Main">
+			<div id="Main_UserImage">
+				  <img src="/image/display1.png" id="Main_UserImage_Content" >
+			</div>
+			<div id="Main_UserName">西野木真姬</div>
+			<div id="Main_UserDescription">用一句话来介绍自己吧</div>
+			<div id="Main_User_Container">
+				 <div id="Main_User_Page">我的主页</div>
+			<div id="Main_User_Container_Second">
+				<div id="Main_User_Container_Second_left">
+					 <div id="Main_User_Container_Second_left_GFW">
+						 <a href=""><div id="Main_User_Guanzhu">关注：25</div></a>
+						 <a href=""><div id="Main_User_Fensi">粉丝:25</div></a>
+						 <a href=""><div id="Main_User_Shoucang">收藏:25</div></a>
+					 </div>
+					 <div id="Main_User_Container_Second_left_INformation">
+						     <div id="Information_Top">个人信息</div>
+						 	 <div id="Information_Name">
+								 <div id="Information_Name_ImgContainer"><img src="/image/UserName.png" alt=""></div>
+							        <div id="Information_Name_Message">西木野真姬</div>
+							 </div>
+		                     <div id="Information_Sex">
+								 <div id="Information_Sex_ImgContainer"><img src="/image/sex.png" alt=""></div>
+							      <div id="Information_Sex_Message">女</div>
+							 </div>
+							 <div id="Information_City">
+								  <div id="Information_City_ImgContainer"><img src="/image/shouye.png" alt=""></div>
+							     <div id="Information_City_Message">日本</div>
+							 </div>
+							 <div id="Information_Hobby">
+								 <div id="Information_Hobby_IMgContainer"><img src="/image/hobby.png" alt=""></div>
+							     <div id="Information_Hobby_Message">hobby</div>
+							 </div>
+							<div id="Information_Modify"><a href="">点击编辑个人信息</a></div>
+					 </div>
+				</div>
+				<div id="Main_User_Container_Second_right">
+					<div id="Main_User_Container_Second_right_Wfgdwb">我关注的人</div>
+					<div id="Main_User_Container_Second_right_PAN">
+						<div id="Prev"><input type="button" id="PrevButton" value="查看前一页" onclick="prev()"></div>
+						<div id="Next"><input type="button" id="NextButton" value="查看后一页" onclick="next()"></div>
+					</div>
+					<div id="Main_Use_WeiboContainer">
+						 <div class="guanzhuBox">
+							 <div class="guanzhuImgbox"><img src="/image/display5.png" ></div>
+							 <div class="guanzhuName">黑猫警长giao哥</div>
+							 
+						 </div>
+						 <div class="guanzhuBox">
+							 <div class="guanzhuImgbox"><img src="/image/display5.png" ></div>
+							 <div class="guanzhuName">黑猫警长giao哥</div>
+							 <input type="button" id="guanzhu2" target="1" value="取消关注" onclick="guanzhu(2)">
+						 </div>
+						 <div class="guanzhuBox">
+							 <div class="guanzhuImgbox"><img src="/image/display5.png" ></div>
+							 <div class="guanzhuName">黑猫警长giao哥</div>
+							 <input type="button" id="guanzhu3" target="1" value="取消关注" onclick="guanzhu(3)">
+						 </div>
+						 <div class="guanzhuBox">
+							 <div class="guanzhuImgbox"><img src="/image/display5.png" ></div>
+							 <div class="guanzhuName">黑猫警长giao哥</div>
+							 <input type="button" id="guanzhu4" target="1" value="取消关注" onclick="guanzhu(4)">
+						 </div>
+						 <div class="guanzhuBox">
+							 <div class="guanzhuImgbox"><img src="/image/display5.png" ></div>
+							 <div class="guanzhuName">黑猫警长giao哥</div>
+							 <input type="button" id="guanzhu5" target="1" value="取消关注" onclick="guanzhu(5)">
+						 </div>
+						 <div class="guanzhuBox">
+							 <div class="guanzhuImgbox"><img src="/image/display5.png" ></div>
+							 <div class="guanzhuName">黑猫警长giao哥</div>
+							 <input type="button" id="guanzhu6" target="1" value="取消关注" onclick="guanzhu(6)">
+						 </div>
+						 <div class="guanzhuBox">
+							 <div class="guanzhuImgbox"><img src="/image/display5.png" ></div>
+							 <div class="guanzhuName">黑猫警长giao哥</div>
+							 <input type="button" id="guanzhu7" target="1" value="取消关注" onclick="guanzhu(7)"> 
+						 </div>
+						 <div class="guanzhuBox">
+							 <div class="guanzhuImgbox"><img src="/image/display5.png" ></div>
+							 <div class="guanzhuName">黑猫警长giao哥</div>
+							 <input type="button" id="guanzhu8" target="1" value="取消关注" onclick="guanzhu(8)">
+						 </div>
+						 <div class="guanzhuBox">
+							 <div class="guanzhuImgbox"><img src="/image/display5.png" ></div>
+							 <div class="guanzhuName">黑猫警长giao哥</div>
+							 <input type="button" id="guanzhu9" target="1" value="取消关注" onclick="guanzhu(9)">
+						 </div>
+					</div>
+				</div>
+			 </div>
+			</div>
+			
+			<div id="SearchBar">
+			 <div class="SearchBar_Box"  onclick="insert(1)"><img src="/image/1.png" alt=""><div id="box1">网红滤镜下的baby </div></div>
+			<div class="SearchBar_Box"  onclick="insert(2)"><img src="/image/2.png" alt=""><div id="box2">刘谦魔术穿帮</div></div>
+			<div class="SearchBar_Box"  onclick="insert(3)"><img src="/image/3.png" alt=""><div id="box3">考研成绩</div></div>
+			<div class="SearchBar_Box"  onclick="insert(4)"><img src="/image/4.png" alt=""><div id="box4">加拿大电鳗</div></div>
+		    <div class="SearchBar_Box"  onclick="insert(5)"><img src="/image/5.png" alt=""><div id="box5">元宵节</div></div>
+			<div class="SearchBar_Box"  onclick="insert(6)"><img src="/image/6.png" alt=""><div id="box6">孙笑川与吴亦凡battle</div></div>
+			<div class="SearchBar_Box"  onclick="insert(7)"><img src="/image/7.png" alt=""><div id="box7">孙笑川点评蔡徐坤球技</div></div>
+		    <div class="SearchBar_Box"  onclick="insert(8)"><img src="/image/8.png" alt=""><div id="box8">孙笑川将与蔡徐坤合作</div></div>
+			<div class="SearchBar_Box"  onclick="insert(9)"><img src="/image/9.png" alt=""><div id="box9">蔡徐坤球技</div></div>
+			
+		</div>
+	</body>
+</html>
